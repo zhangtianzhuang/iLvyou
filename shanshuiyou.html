@@ -1,0 +1,401 @@
+<html>
+<head>
+<title></title>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/ztz_shanshui01.jpg)","url(images/ztz_shanshui02.jpg)",
+							"url(images/ztz_shanshui03.jpg)");
+		document.getElementById("tupianqiehuan").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==3){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+<style>
+
+*{margin:0px;padding:0px;outline:none;font-family:微软雅黑;}
+li{list-style-type:none;}
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+div.header li img{float:left;width:237.5px;height:80px;}
+div{box-sizing:content-box;}
+
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;}
+div.navier ul {height:40px;}
+div.navier ul li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier ul li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px;}
+div.navier li a:hover{background-color:#acd6ff;color:#fff}
+li.cl{margin-left:12px;}
+
+.older{width:950px;height:650px;margin:0px auto;padding:5px;}
+.tuwen{width:450px;height:600px;float:left;}
+#tupianqiehuan{width:450px;height:300px;background-image:url(images/ztz_shanshui01.jpg);background-repeat:round;}
+.jieshao{width:440px;height:270px;border:1px solid;margin-top:20px;padding:5px}
+
+.xinxi{width:470px;height:590px;float:right;padding:5px;}
+.xinxi td{height:40px;}
+.xingcheng span{font-size:12px;position:relative;bottom:9px}
+.dingdan input{width:140px;}
+.det{width:940px;height:280px;padding:5px;}
+.det p{text-indent:2em;font-size:12px}
+.det span{font-size:15px;position:relative;bottom:10px;}
+.left{width:260px;height:280px;float:left;border:1px solid}
+.right{width:660px;height:280px;float:right;border:1px solid}
+</style>
+</head>
+<body>
+	<div style="width:100%;height:130px;background-color:#fff;padding-bottom:15px">
+				<!--头部-->
+			<div class="header">
+				<ul>
+					<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+					<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+					<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+					<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+				</ul>
+			</div>
+			<!--导航-->
+			<div class="navier">
+						<ul>
+						<li><a href="index.html">首页</a></li>
+						<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+						<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+						<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+						<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+						<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+						<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+						<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+						</ul>
+			</div>
+			<!--分隔条-->
+			<div style="width:100%;height:3px;background-color:#acd6ff;">
+			</div>
+		</div>
+		<!-- body-->
+		<div class="older">
+			<span style="color:#acd6ff;font-size:18px;"><山水游></span>&nbsp;&nbsp;<span style="color:#000">桂林-漓江-遇龙河-世外桃源-德天瀑布-明仕田园-北海银滩双飞9日游</span>
+			<div style="width:950px;height:1px;background-color:#acd6ff;margin-bottom:15px"></div>
+
+			<div class="tuwen">
+				<div id="tupianqiehuan"></div>
+				<div class="jieshao">
+					<b>购买须知</b><br/>
+					<p>
+					（1）合同一经签订且付全款，团队机票、列车票、船票即为出票，不得更改、签转、退票。 
+					</p>
+					<p>
+					（2）飞行时间、车程时间、船程时间以当日实际所用时间为准。 
+					</p>
+					<p>
+					（3）本产品如因淡季或收客人数较少，有可能与相近方向的发班线路拼车出游，届时请游客见谅。按2人入住1间房核算，如出现单男单女，尽量安排该客人与其他同性别团友拼房；十人一桌，八菜一汤，人数不足十人时，在每人用餐标准不变的前提下调整餐食的分量。
+					</p>
+					<p>
+					（4）团队游览中不允许擅自离团（自由活动除外），中途离团视同游客违约，按照合同总金额的20%赔付旅行社，由此造成未参加行程内景点、用餐、房、车等费用不退....<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="xinxi">
+				<table>
+					<tr>
+						<td width="100"><b>出发地</b></td>
+						<td>广州，珠海，深圳，郑州，北京，呼和浩特,石家庄</td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>目的地</b></td>
+						<td>桂林，南宁，北海</td>
+					</tr>
+					
+					<tr>
+						<td width="100"><b>出游日期</b></td>
+						<td>06月13日，06月17日，06月23日，06月27日</td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>行程天数</b></td>
+						<td>9日</td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>交通信息</b></td>
+						<td>往返航空</td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>行程简介</b></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="100" colspan="2" class="xingcheng">
+							<img src="images/ztz_day01.png"/><span>桂林出发—></span>
+							<img src="images/ztz_day02.png"/><span>桂林—>船游漓..</span>
+							<img src="images/ztz_day03.png"/><span>阳朔—>遇龙河..</span><a style="color:#acd6ff" href="#"><sub>详情</sub></a>
+						</td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>市场价</b></td>
+						<td><del style="position:relative;bottom:10px">￥4343</del>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/ztz_zhekou.png"/></td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>折扣价</b></td>
+						<td><span style="font-size:30px;font-family:黑体;color:orange;">&nbsp;￥3865</span></td>
+					</tr>
+
+					<tr>
+						<td width="100"><b>订购热线</b></td>
+						<td>400-797-3113</td>
+					</tr>
+					<tr>
+						<td width="100"><b>立即报名</b></td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td width="100" colspan="2">
+							<form>
+							<table class="dingdan">
+								<tr>
+									<td>姓名：</td>
+									<td><input type="text" /></td>
+									<td>联系地址：</td>
+									<td><input type="text" /></td>
+								</tr>
+								<tr>
+									<td>留言：</td>
+									<td><input type="text" /></td>
+									<td>联系方式：</td>
+									<td><input type="text" /></td>
+								</tr>
+							</table>
+							</form>
+						</td>
+					</tr>
+					<tr>
+						<td width="100" colspan="2"><a href="#" style="display:block;font-size:25px;text-align:center;text-decoration:none;background-color:#acd6ff;color:#fff;height:45px;width:93%;line-height:45px">联系我们</a></td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+
+		<div style="width:950px;height:2640px;margin:0px auto;">
+			<span style="font-size:20px;color:#acd6ff"><b>&nbsp;详细行程</b></span>
+			<!--第一天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第一天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：敬请自理 午餐：敬请自理 晚餐：敬请自理
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						桂林参考酒店：Sheraton Guilin Hotel、Grand Link Hotel（豪华房）或漓江大瀑布饭店
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						“五钻系列，小资阳朔”——已经预定此线路的朋友，今天要带着家人和朋友，自行前往这次的旅游目的地【桂林】...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/01day01.jpg"/>&nbsp;<img src="images/01day02.jpg"/>
+				</div>
+			</div>
+			<!--第二天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第二天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：敬请自理 午餐：敬请自理 晚餐：敬请自理
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						阳朔指定酒店：阳朔维也纳酒店（如遇满房调整为唐人街豪华房或象山国际大酒店）
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						船游大漓江（酒店-景点距离：约30公里；旅游车行驶时间：约45分钟左右）自行前往酒店享用自助早餐，之后在...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/02day01.jpg"/>&nbsp;<img src="images/02day02.jpg"/>
+				</div>
+			</div>
+			<!--第三天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第三天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：含 晚餐：敬请自理
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						阳朔指定酒店：阳朔维也纳酒店（如遇满房调整为唐人街豪华房或象山国际大酒店）
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						自行前往酒店享受酒店自助早餐，之后约定的时间地点集合一同前往遇龙河——感受 “舟行碧波上，人在画中游”的恬然闲适...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/03day01.jpg"/>&nbsp;<img src="images/03day02.jpg"/>
+				</div>
+			</div>
+			<!--第四天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第四天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：含 晚餐：自理，请准备好自己的南宁特色美食攻略哦~
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						南宁参考酒店：邕州宾馆、凤凰宾馆等挂牌四星酒店（如遇满房则调整到天宇酒店）
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						酒店叫早，乘车前往游世外桃源（游览时间约1.5小时）。景点：世外桃源（游览时间：约1.5小时）...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/04day01.jpg"/>&nbsp;<img src="images/04day02.jpg"/>
+				</div>
+			</div>
+			<!--第五天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第五天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：含 晚餐：含
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						途牛独家指定酒店：明仕山庄度假酒店
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						酒店叫早，然后前往餐厅用早餐；导游按约定时间到酒店接客人，乘车前往硕龙（车程约4.5小时）...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/05day01.jpg"/>&nbsp;<img src="images/05day02.jpg"/>
+				</div>
+			</div>
+			<!--第六天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第六天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：含 晚餐：自理，自备北海美食攻略，一场海鲜美食搜刮战
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						北海参考酒店：巴伐利亚大酒店、维也纳国际酒店、（如遇房满则为您调整至同价位其他酒店）
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						酒店用早之后就前往乘坐竹排游览有“胜似神仙之居，犹如居士之隐”之称的...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/06day01.jpg"/>&nbsp;<img src="images/06day02.jpg"/>
+				</div>
+			</div>
+			<!--第七天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第七天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：敬请自理 晚餐：敬请自理
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						北海参考酒店：巴伐利亚大酒店、维也纳国际酒店
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						今天无统一行程，大家可以在北海自由活动一天，吹吹当地海风，自费品尝一下当地特色海鲜餐...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/07day01.jpg"/>&nbsp;<img src="images/07day02.jpg"/>
+				</div>
+			</div>
+			<!--第八天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第八天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：含 晚餐：敬请自理
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						南宁参考酒店：邕州宾馆、凤凰宾馆等挂牌四星酒店（如遇满房则调整到天宇酒店）
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						酒店叫早，用早餐；后前往国家4A级旅游度假区——银滩（游程约1.5-2小时）...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/08day01.jpg"/>&nbsp;<img src="images/08day02.jpg"/>
+				</div>
+			</div>
+			<!--第九天-->
+			<div class="det">
+				<div class="left">
+					<img src="images/ztz_diyitian.png"/><span>&nbsp;第一天</span><br/>
+					<img src="images/ztz_canyin.png"/><span>&nbsp;餐饮安排</span><br/>	
+					<p>
+						早餐：酒店床位早 午餐：敬请自理 晚餐：敬请自理
+					</p>
+					<img src="images/ztz_zhusu.png"/><span>&nbsp;住宿安排</span><br/>
+					<p>
+						温暖的家
+					</p>
+					<img src="images/ztz_quantian.png"/><span>&nbsp;全天安排</span><br/>
+					<p>
+						自行前往酒店用早餐，然后根据酒店的退房时间，于11:50之前自行办理好退房手续。之后在南宁自由活动。根据自身的交通方式返回温暖的家，结束快乐旅程！...<a href="#" style="color:#acd6ff;text-decoration:none">详情>></a>
+					</p>
+				</div>
+
+				<div class="right">
+					<img src="images/ztz_jingdian.png"/><span>&nbsp;景点推荐</span><br/>
+					&nbsp;<img src="images/09day01.jpg"/>&nbsp;<img src="images/09day02.jpg"/>
+				</div>
+			</div>
+
+		</div>
+
+</body>
+</html>

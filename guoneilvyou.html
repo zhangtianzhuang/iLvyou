@@ -1,0 +1,486 @@
+<html>
+<head>
+<title>国内旅游</title>
+<link type="text/css" href="css/navier.css" rel="stylesheet"/>
+<style>
+body{background-image:url(images/zy-beijing.jpg);
+     background-repeat:no-repeat;
+     background-attachment:fixed;
+     background-size:cover;
+     }
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;background-color:white;}
+div.navier ul {height:40px;}
+div.navier ul li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier ul li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px;}
+div.navier ul li a:hover{background-color:#5cadad;color:#fff}
+li.cl{margin-left:12px;}
+#banner{margin:0px auto;width:100%;height:600px;background-color:white;background-repeat:round;background-attachment:cover;background-image:url(images/zy-banner1.jpg);
+}
+.abody{width:950px;height:660px;margin:0px auto;border:1px solid #bebebe;background-color:white;}
+.bbody{width:950px;margin:0px auto;background-color:white;margin-top:15px;}
+.left{width:768px;height:950px;background-color:white;border:1px solid #bebebe;float:left;}
+.right{width:170px;height:450px;background-color:white;border:1px solid #bebebe;float:right;}
+.dh{font-size:16px;margin:5px;color:#5cadad;float:left;position:relative;top:3px;}
+.xpic{width:400px;height:320px;float:left;margin:12px;margin-left:16px;}
+.ypic{width:230px;height:147px;float:left;margin:12px;}
+.xpic:hover,.ypic:hover{position:relative;bottom:5px;}
+.xpic img:hover,.ypic img:hover{opacity:0.7;}
+.cxph{width:700px;height:270px;float:left;}
+.zs{width:150px;height:200px;margin:11px;float:left;border:1px solid black;}
+.zs:hover{position:relative;top:10px;}
+.hd{width:225px;height:270px;float:left;margin-left:20px;}
+.hd a{text-decoration:none;font-size:12px;margin:5px;color:#6c6c6c;}
+.hd a:hover{color:#5cadad;}
+.jj{width:200px;height:180px;float:left;margin:10px;}
+.fj{width:1px;height:180px;float:left;background-color:#e0e0e0;margin-top:10px;}
+.picture{width:520px;height:180px;float:left;margin:10px;}
+.show{width:160px;height:180px;float:left;margin-left:10px;border:1px solid #9d9d9d;}
+.show:hover{margin-top:5px;}
+.gd{float:right;margin-right:3px;margin-top:15px;}
+.gd a{text-decoration:none;font-size:12px;color:#5cadad;}
+.gd a:hover{color:#9d9d9d;}
+.title{font-size:14px;}
+.title a{font-size:12px;color:#5cadad;float:right;text-decoration:none;position:relative;left:7px;top:3px;}
+.nr{margin-top:5px;}
+.nr li{float:left;}
+.nr a{font-size:12px;text-decoration:none;color:#6c6c6c;}
+.net{margin-left:14px;}
+.ph{margin-top:5px;}
+.ph a{font-size:13px;text-decoration:none;color:#5cadad;}
+.ph span{font-size:11px;color:#9d9d9d;position:relative;left:20px;}
+.black{width:160px;height:30px;background-color:black;opacity:0.7;position:relative;bottom:30px;text-align:center;}
+.black span{font-size:14px;color:white;position:relative;top:5px;}
+.ablack{width:26px;height:100px;background-color:black;opacity:0.7;float:left;margin-top:5px;border:1px solid black;position:relative;right:130px;text-align:center;}
+.ablack span{font-size:14px;color:white;position:relative;top:10px;}
+.bottom{width:740px;height:110px;float:left;margin-left:10px;border:1px solid #9d9d9d;}
+.rhead{float:left;margin-top:5px;margin-left:10px;border:1px solid #9d9d9d;}
+.rhead:hover{opacity:0.7;}
+.more{font-size:12px;}
+.more li{float:left;margin-left:16px;margin-top:5px;}
+.more a{text-decoration:none;color:#6c6c6c;}
+.xg{width:170px;height:430px;background-color:white;border:1px solid #bebebe;float:right;margin-top:10px;}
+.xg img{margin-top:7px;margin-left:13px;border:1px solid #9d9d9d;}
+.xg img:hover{opacity:0.7;}
+</style>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/zy-banner1.jpg)","url(images/zy-banner2.jpg)",
+							"url(images/zy-banner3.jpg)","url(images/zy-banner4.jpg)","url(images/zy-banner5.jpg)");
+		document.getElementById("banner").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==5){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+</head>
+<body>
+	<!--头部-->
+	<div style="width:100%;height:120px;background-color:white;">
+		<div class="header">
+			<ul>
+				<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+				<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+				<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+				<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+			</ul>
+		</div>
+	
+	<!--导航-->
+		<div class="navier">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+					<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+					<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+					<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+					<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+					<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+					<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+		</div>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:#5cadad;">
+	</div>
+	<div id="banner">		
+	</div>
+	<div class="abody">
+		<div class="dh">
+			>>热门旅游
+		</div>
+		<div class="gd">
+			<a href="#">更多>></a>
+		</div>
+		<div style="width:950px;height:1px;background-color:#5cadad;float:left;">
+		</div>
+		<div class="xpic">
+			<div>
+				<a href="#"><img src="images/zy-one1.jpg" width=400px height=270px></a>
+			</div>
+			<div style="width:390px;height:20px;font-size:14px;background:#fcfcfc;margin-left:3px;">
+				北京跟团7日游长城+故宫+颐和园等7大旅游景点特色观景酒…
+			</div>
+			<div style="float:left;font-size:12px;color:#9d9d9d;margin:6px;">
+					跟团游限时抢购中
+			</div>
+			<div style="float:right;font-size:12px;">
+				￥<span style="font-size:20px;color:#ff0000;">1468</span>起
+			</div>
+		</div>
+		<div class="ypic">
+			<div>
+				<a href="#"><img src="images/zy-one2.jpg" width=230px height=120px></a>
+			</div>
+			<div style="width:230px;height:20px;font-size:14px;background:#fcfcfc;margin-left:3px;">
+				海南三亚跟团3日游体验浪漫沙滩…
+			</div>
+			<div style="float:left;font-size:12px;color:#9d9d9d;margin:6px;">
+					跟团游限时抢购中
+			</div>
+			<div style="float:right;font-size:12px;">
+				￥<span style="font-size:20px;color:#ff0000;">2300</span>起
+			</div>
+		</div>
+		<div class="ypic">
+			<div>
+				<a href="#"><img src="images/zy-one3.jpg" width=230px height=120px></a>
+			</div>
+			<div style="width:230px;height:20px;font-size:14px;background:#fcfcfc;margin-left:3px;">
+				桂林跟团双人3日游游赏山水人间…
+			</div>
+			<div style="float:left;font-size:12px;color:#9d9d9d;margin:6px;">
+					跟团游限时抢购中
+			</div>
+			<div style="float:right;font-size:12px;">
+				￥<span style="font-size:20px;color:#ff0000;">1211</span>起
+			</div>
+		</div>
+		<div class="ypic">
+			<div>
+				<a href="#"><img src="images/zy-one4.jpg" width=230px height=120px></a>
+			</div>
+			<div style="width:230px;height:20px;font-size:14px;background:#fcfcfc;margin-left:3px;">
+				厦门大学+鼓浪屿2日豪华版双人游…
+			</div>
+			<div style="float:left;font-size:12px;color:#9d9d9d;margin:6px;">
+					跟团游限时抢购中
+			</div>
+			<div style="float:right;font-size:12px;">
+				￥<span style="font-size:20px;color:#ff0000;">980</span>起
+			</div>
+		</div>
+		<div class="ypic">
+			<div>
+				<a href="#"><img src="images/zy-one5.jpg" width=230px height=120px></a>
+			</div>
+			<div style="width:230px;height:20px;font-size:14px;background:#fcfcfc;margin-left:3px;">
+				九寨沟-黄龙-都江堰双人3日游赏…
+			</div>
+			<div style="float:left;font-size:12px;color:#9d9d9d;margin:6px;">
+					跟团游限时抢购中
+			</div>
+			<div style="float:right;font-size:12px;">
+				￥<span style="font-size:20px;color:#ff0000;">1778</span>起
+			</div>
+		</div>
+		<div class="cxph">
+			<div class="dh">
+				>>畅销排行
+			</div>
+			<div class="gd">
+			<a href="#">更多>></a>
+			</div>
+			<div style="width:700px;height:1px;background-color:#5cadad;float:left;">
+			</div>
+			<div class="zs">
+				<a href="#"><img src="images/zy-cx1.jpg"></a>
+			</div>
+			<div class="zs">
+				<a href="#"><img src="images/zy-cx2.jpg"></a>
+			</div>
+			<div class="zs">
+				<a href="#"><img src="images/zy-cx3.jpg"></a>
+			</div>
+			<div class="zs">
+				<a href="#"><img src="images/zy-cx4.jpg"></a>
+			</div>
+		</div>
+		<div class="hd">
+			<div class="dh">
+				>>活动·促销
+			</div>
+			<div class="gd" style="width:100px;text-align:right;">
+			<a href="#">更多>></a>
+			</div>
+			<div style="width:225px;height:1px;background-color:#5cadad;float:left;">
+			</div>
+			<div style="position:relative;top:7px;">
+				<a href="#">【活动】&nbsp厦门鼓浪屿浪漫双人3日游</a><br/>
+				<a href="#">【促销】&nbsp暑期夏令营跟团游5折起</a><br/>
+				<a href="#">【活动】&nbsp沿海黄金旅游路线推荐</a><br/>
+				<a href="#">【活动】&nbsp小长假主题游特色游</a><br/>
+				<a href="#">【活动】&nbsp特色城市游上海站</a><br/>
+				<a href="#">【促销】&nbsp家庭游豪华尊享版限时抢购</a><br/>
+				<a href="#">【促销】&nbsp周末出行两日游7折抢购</a><br/>
+				<a href="#">【活动】&nbsp暑期双人海岛游预定</a><br/>
+				<a href="#">【促销】&nbsp广州-深圳3日游8折热销</a><br/>
+				<a href="#">【促销】&nbsp首都北京3日游限时抢购</a><br/>
+				<a href="#">【促销】&nbsp昆明-西双版纳5日游9折</a><br/>
+				<a href="#">【活动】&nbsp暑期丽江古城跟团游预订</a><br/>
+				<a href="#">【活动】&nbsp黄金周航班提前预订</a><br/>
+				<a href="#">【促销】&nbsp泰山观日出跟团游5折抢购</a><br/>
+			</div>
+		</div>
+	</div>
+	<div class="bbody">
+		<div class="left">
+			<div class="dh">
+				>>主题旅游
+			</div>
+			<div class="gd">
+			<a href="#">更多>></a>
+			</div>
+			<div style="width:768px;height:1px;background-color:#5cadad;float:left;">
+			</div>
+			<div class="jj">
+				<div class="title">
+					浪漫之游--海岛<span><a href="#">更多>></a></span>
+				</div>
+				<div class="ph">
+					<ul>
+						<li><a href="#">①&nbsp西沙群岛</a><span>国内最美岛屿</span></li>
+						<li style="margin-top:5px"><a href="#">②&nbsp南沙群岛<span>珊瑚为中国铸就界碑</span></a></li>
+						<li style="margin-top:5px"><a href="#">③&nbsp海陵岛</a><span>南中国海边的明珠</span></li>
+					</ul>
+				</div>
+				<div class="nr">
+					<ul>
+						<li><a href="#">涠洲岛</a></li>
+						<li class="net"><a href="#">澎湖列岛</a></li>
+						<li class="net"><a href="#">南麂岛</a></li>
+						<li class="net"><a href="#">南碇岛</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">庙岛列岛</a></li>
+						<li class="net"><a href="#">大嵛山岛</a></li>
+						<li class="net"><a href="#">蜈支洲岛</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">林进屿</a></li>
+					</ul><br/>
+				</div>
+			</div>
+			<div class="fj">
+			</div>
+			<div class="picture">
+				<div class="show">
+					<a href="#"><img src="images/zy-pic1.jpg" width=160 height=180></a>
+					<div class="black"><span>西沙群岛</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic2.jpg" width=160 height=180></a>
+					<div class="black"><span>南沙群岛</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic3.jpg" width=160 height=180></a>
+					<div class="black"><span>涠洲岛</span></div>
+				</div>
+			</div>
+			<div class="jj">
+				<div class="title">
+					雄伟之游--都市<span><a href="#">更多>></a></span>
+				</div>
+				<div class="ph">
+					<ul>
+						<li><a href="#">①&nbsp重庆</a><span>最让人流连忘返的旅游城市</span></li>
+						<li style="margin-top:5px"><a href="#">②&nbsp上海<span>最美国家中心城市</span></a></li>
+						<li style="margin-top:5px"><a href="#">③&nbsp北京</a><span>以繁华及雄伟并称</span></li>
+					</ul>
+				</div>
+				<div class="nr">
+					<ul>
+						<li><a href="#">西安</a></li>
+						<li class="net"><a href="#">杭州</a></li>
+						<li class="net"><a href="#">苏州</a></li>
+						<li class="net"><a href="#">青岛</a></li>
+						<li class="net"><a href="#">广州</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">沈阳</a></li>
+						<li class="net"><a href="#">成都</a></li>
+						<li class="net"><a href="#">昆明</a></li>
+						<li class="net"><a href="#">郑州</a></li>
+						<li class="net"><a href="#">厦门</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">哈尔滨</a></li>
+						<li class="net"><a href="#">深圳</a></li>
+						<li class="net"><a href="#">无锡</a></li>
+						<li class="net"><a href="#">南京</a></li>
+						<li class="net"><a href="#">武汉</a></li>
+					</ul><br/>
+				</div>
+			</div>
+			<div class="fj">
+			</div>
+			<div class="picture">
+				<div class="show">
+					<a href="#"><img src="images/zy-pic4.jpg" width=160 height=180></a>
+					<div class="black"><span>重庆</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic5.jpg" width=160 height=180></a>
+					<div class="black"><span>郑州</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic6.jpg" width=160 height=180></a>
+					<div class="black"><span>上海</span></div>
+				</div>
+			</div>
+			<div class="jj">
+				<div class="title">
+					温暖之游--古城<span><a href="#">更多>></a></span>
+				</div>
+				<div class="ph">
+					<ul>
+						<li><a href="#">①&nbsp凤凰古城</a><span>中国最美丽的小城</span></li>
+						<li style="margin-top:5px"><a href="#">②&nbsp大理古城<span>素有“文献名邦”之称</span></a></li>
+						<li style="margin-top:5px"><a href="#">③&nbsp丽江古城</a><span>历史文明古城</span></li>
+					</ul>
+				</div>
+				<div class="nr">
+					<ul>
+						<li><a href="#">商丘古城</a></li>
+						<li class="net"><a href="#">阆中古城</a></li>
+						<li class="net"><a href="#">平遥古城</a></li>
+						
+					</ul><br/>
+					<ul>
+						<li><a href="#">寿县古城</a></li>
+						<li class="net"><a href="#">襄阳古城</a></li>
+						<li class="net"><a href="#">荆州古城</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">歙县古城</a></li>
+						<li class="net"><a href="#">西昌古城</a></li>
+					</ul><br/>
+				</div>
+			</div>
+			<div class="fj">
+			</div>
+			<div class="picture">
+				<div class="show">
+					<a href="#"><img src="images/zy-pic8.jpg" width=160 height=180></a>
+					<div class="black"><span>凤凰古城</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic7.jpg" width=160 height=180></a>
+					<div class="black"><span>丽江古城</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic9.jpg" width=160 height=180></a>
+					<div class="black"><span>大理古城</span></div>
+				</div>
+			</div>
+			<div class="jj">
+				<div class="title">
+					壮观之游--山水<span><a href="#">更多>></a></span>
+				</div>
+				<div class="ph">
+					<ul>
+						<li><a href="#">①&nbsp九寨沟</a><span>人间仙境震撼人心</span></li>
+						<li style="margin-top:5px"><a href="#">②&nbsp桂林<span>山水甲天下</span></a></li>
+						<li style="margin-top:5px"><a href="#">③&nbsp长白山</a><span>惊鸿一瞥的美人</span></li>
+					</ul>
+				</div>
+				<div class="nr">
+					<ul>
+						<li><a href="#">漓江</a></li>
+						<li class="net"><a href="#">三亚</a></li>
+						<li class="net"><a href="#">黄山</a></li>
+						<li class="net"><a href="#">鼓浪屿</a></li>
+						<li class="net"><a href="#">张家界</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">西湖</a></li>
+						<li class="net"><a href="#">青海湖</a></li>
+						<li class="net"><a href="#">泰山</a></li>
+						<li class="net"><a href="#">华山</a></li>
+						<li class="net"><a href="#">千岛湖</a></li>
+					</ul><br/>
+					<ul>
+						<li><a href="#">丽江</a></li>
+						<li class="net"><a href="#">香格里拉</a></li>
+						<li class="net"><a href="#">松花湖</a></li>
+					</ul><br/>
+				</div>
+			</div>
+			<div class="fj">
+			</div>
+			<div class="picture">
+				<div class="show">
+					<a href="#"><img src="images/zy-pic10.jpg" width=160 height=180></a>
+					<div class="black"><span>九寨沟黄龙</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic11.jpg" width=160 height=180></a>
+					<div class="black"><span>桂林</span></div>
+				</div>
+				<div class="show">
+					<a href="#"><img src="images/zy-pic12.jpg" width=160 height=180></a>
+					<div class="black"><span>黄山</span></div>
+				</div>
+			</div>
+			<div class="bottom">
+				<a href="#"><img src="images/zy-bottomx.jpg" width=740px height=110px></a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="dh">
+				>>旅游助手
+			</div>
+			<div style="width:170px;height:1px;background-color:#5cadad;float:left;">
+			</div>
+			<div class="rhead">
+				<a href="#"><img src="images/zy-rhead1.png" width=130px height=100px></a>
+			</div>
+			<div class="ablack"><span>地图查询</span></div>
+			<div class="rhead">
+				<a href="#"><img src="images/zy-rhead2.jpg" width=130px height=100px></a>
+			</div>
+			<div class="ablack"><span>酒店查询</span></div>
+			<div class="rhead">
+				<a href="#"><img src="images/zy-rhead3.jpg" width=130px height=100px></a>
+			</div>
+			<div class="ablack"><span>机票办理</span></div>
+			<div class="more">
+					<li><a href="#">景点查询</a></li>
+					<li><a href="#">wifi查询</a></li>
+					<li><a href="#">天气预报</a></li>
+					<li><a href="#">导游聘请</a></li>
+					<li><a href="#">旅游问答</a></li>
+					<li><a href="#">旅游游记</a></li>
+					<li><a href="#">旅游指南</a></li>
+					<li><a href="#" style="color:#5cadad;">更多>></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="xg">
+			<div class="dh">
+				>>相关推广
+			</div>
+			<div style="width:170px;height:1px;background-color:#5cadad;float:left;">
+			</div>
+			<a href="#"><img src="images/zy-xgtg1.jpg" width=140px height=120px></a>
+			<a href="#"><img src="images/zy-xgtg2.jpg" width=140px height=120px></a>
+			<a href="#"><img src="images/zy-xgtg3.jpg" width=140px height=120px></a>
+		</div>
+	</div>
+</body>
+</html>

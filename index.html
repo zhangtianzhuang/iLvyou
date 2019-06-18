@@ -1,0 +1,840 @@
+<html>
+	<head>
+		<meta charset="utf-8"  />
+		<title>首页</title>
+	<link style="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/index.js" language="javascript">
+		</script>
+	</head>
+	<body>
+
+	<div style="width:100%;height:auto;background-color:#fff;padding-bottom:15px">
+
+		<!--头部-->
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background-color:#6c6c6c;">
+	</div>
+
+	</div>
+		<div class="picture">
+			<div class="top">
+				<div class="register">
+					<form action="post">
+						<p><b>国内机票</b></p><br/>
+						<label for="dancheng">单程</label><input id="dancheng" type="radio" name="ticket" />&nbsp;
+						<label for="wangfan">往返</label><input id="wangfan" type="radio" name="ticket" /><br/>
+						<table>
+							<tr>
+								<td>出发城市</td>
+								<td><input type="text" placeholder="郑州" id="city"/></td>
+							</tr>
+							<tr>
+								<td>到达城市</td>
+								<td><input type="text" placeholder="香港" id="city" /></td>
+							</tr>
+							<tr>
+								<td>出发时间</td>
+								<td><input type="date"/></td>
+							</tr>
+							<tr>
+								<td>返程时间</td>
+								<td><input type="date" /></td>
+							</tr>
+							<tr>
+								<td><input class="tijiao" type="submit" value="提交"/></td>
+								<td><input class="tijiao" type="reset" value="重填"/></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div> <!-- class="top" -->
+			
+		</div>
+
+		<!--热门推荐开始-->
+
+		<div style="width:940px;height:auto;margin:10px auto;background-color:white;border:1px solid #d0d0d0;padding:5px;">
+
+			<div class="little_header">
+				<img class="logos" src="images/ztz_rementuijian.png"/><a href="#">[热门推荐]</a>
+			</div>
+			
+			<div style="width:940px;height:10px;margin:10px auto;background-color:#0080ff;opacity:0.7">
+			</div>
+			
+			<div class="main1">
+				<span class="lvyoukinds_title">海岛之旅</span><br/>
+				<table class="lvyoukinds">
+					<tr>
+						<td><a href="ztz_haidaozhilv.html#maerdaifu">
+							<img src="images/ztz_face_maerdaifu.jpg"/></a>
+							马尔代夫之旅
+							<sub><a onclick="fun1();" id="maer">[展开]</a></td></sub>
+						<td><a href="ztz_haidaozhilv.html#maoliqiusi">
+							<img src="images/ztz_face_maoliqiusi.png"/></a>
+							毛里求斯之旅
+							<sub><a onclick="fun2();" id="maoli">[展开]</a></td></sub></td>
+						<td><a href="ztz_haidaozhilv.html#shengtuolini">
+							<img src="images/ztz_face_shengtulini.png"/></a>
+							圣托里尼之旅
+							<sub><a onclick="fun3();" id="shengtuo">[展开]</a></td></sub>
+						</td>
+						<td><a href="ztz_haidaozhilv.html#daxidi">
+							<img src="images/ztz_face_daxidi.jpg"/></a>
+							大溪地之旅
+							<sub><a onclick="fun4();" id="daxi">[展开]</a></td></sub>
+						</td>
+					</tr>
+				</table>
+			</div>
+					<!--马尔代夫隐藏-->
+				<div class="haidao" id="maerdaifu">
+				<a name="maerdaifu"></a>
+				<span class="title">马尔代夫之旅</span><br/>
+				<table>
+					<tr>
+						<td class="left">
+							<span>简介：<br/>天堂很近,喧嚣很远</span><br/>
+							<p>
+								&nbsp;&nbsp;纯净雪白的沙滩、天海不分的蓝、缤纷多彩的潜水天堂、刺激的海上活动、棕榈围绕的隐密度假村，让她成为了国人心目中的蜜月天堂。<hr/>
+								特色旅行：<br/>
+								①快艇出海，看海豚巡游，黄昏时进行海钓<br/>
+								②参加水上飞机活动，通过窗口俯视珊瑚礁群大珠小珠落玉盘的壮观美景
+							</p>
+						</td>
+						<td class="center">
+							<p>
+								<span>准备：</span><br/>
+								【签证】中国游客前往马尔代夫无需提前办理签证，可免费办理30天有效的落地签证。<br/>
+								<hr/>
+								【交通】马尔代夫的美佳航空有从北京和上海直达马尔代夫首都马累的航班，但这个航线大多被旅行社代理销售，如果想自由行可以选择从香港、新加坡、吉隆坡等地转机前往。<br/>
+								<hr/>
+								【住宿】“一岛一酒店”是马尔代夫的最大特色，在近百个岛中选择一个适合自己的最佳酒店往往是前往马尔代夫的情侣出行前最花精力的事情，建议选择离首都马累相对较远的岛，往往这里的游客比较少且景色保持的更好，通过对比价格和酒店设施来选择酒店总是一个正确的办法，另外通过淘宝上的代理预定或直接通过邮件和酒店确认都可以为你节省一笔费用。<br/>
+							</p>
+							<table>
+								<tr>
+									<td><img src="images/ztz_maerdaifu_01.png"/></td>
+									<td><img src="images/ztz_maerdaifu_02.png"/></td>
+								</tr>
+							</table>
+						</td>
+						<td class="right">
+							<img src="images/ztz_maerdaifu_03.png"/><br/>
+							<img src="images/ztz_maerdaifu_04.png"/>
+						</td>
+					</tr>
+				</table>
+				</div>
+					<!--毛里求斯隐藏-->
+				<div class="haidao" id="maoliqiusi">
+				<a name="maoliqiusi"></a>
+				<span class="title">毛里求斯之旅</span><br/>
+				<table>
+					<tr>
+						<td class="left">
+							<span>简介：<br/>天堂的故乡</span><br/>
+							<p>
+								&nbsp;&nbsp;毛里求斯是天堂的故乡，因为天堂是仿照毛里求斯这个小岛而打造出来的，这里以清澈的碧蓝海水和无尽的白色沙滩而著名。<hr/>
+								特色旅行：<br/>
+		
+								①在路易港，感受多文化交融！<br/>
+								②去Chamarel公园，看奇幻的七色大地和落差超高的瀑布著称。<br/>
+								③跳起动感的塞卡舞，感受特有的风土人情！
+							</p>
+						</td>
+						<td class="center">
+							<p>
+								<span>准备：</span><br/>
+								【签证】中国是享受毛里求斯免签待遇的第一个大国，持中国护照的游客进入毛里求斯停留不		超过30天都不需要办理签证。<hr/>
+								【交通】上海有直飞毛里求斯的航班，飞行时间约12个小时，也可以从香港中转前往。<hr/>
+								【住宿】毛里求斯比世界上其他任何地方所拥有的五星级酒店都要多。这里大部分的酒店都是四、五星级，即使是三星级的酒店，所提供的也是五星级的服务，且大多酒店都位于海岸地区。<br/>
+							</p>
+							<table>
+								<tr>
+									<td><img src="images/ztz_maoliqiusi_01.png"/></td>
+									<td><img src="images/ztz_maoliqiusi_02.png"/></td>
+								</tr>
+							</table>
+						</td>
+						<td class="right">
+							<img src="images/ztz_maoliqiusi_03.png"/><br/>
+							<img src="images/ztz_maoliqiusi_04.png"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+					<!--圣托里尼隐藏-->
+				<div class="haidao" id="shengtuolini">
+					<a name="shengtuolini"></a>
+					<span class="title">圣托里尼之旅</span><br/>
+					<table>
+						<tr>
+							<td class="left">
+								<span>简介：<br/>纯净的蓝白世界</span><br/>
+								<p>
+									&nbsp;&nbsp;希腊爱琴海的小岛目前已经成为全球度蜜月最浪漫的地点，克里特岛的迷宫、非常嬉皮的米克诺斯，还有传说中消失的亚特兰提斯城—圣托里尼。
+								</p>
+							</td>
+							<td class="center">
+								<p>
+									<span>准备：</span><br/>
+									【签证】希腊属于申根国家，需要提前办理申根签证。<hr/>
+									【交通】从雅典可以乘坐当地的爱琴海航空或奥林匹亚航空的班机45分钟就可以到达圣托里尼，也可以从雅典乘船6-8个小时可以到达。<hr/>
+									【住宿】岛上菲拉和伊亚两地的酒店是大多新婚夫妇的蜜月之选，如果想要不一样的感受，建议可以选择位于悬崖边的洞穴房。
+								</p>
+								<table>
+									<tr>
+										<td><img src="images/ztz_shengtuolini_01.png"/></td>
+										<td><img src="images/ztz_shengtuolini_02.png"/></td>
+									</tr>
+								</table>
+							</td>
+							<td class="right">
+								<img src="images/ztz_shengtuolini_03.png"/><br/>
+								<img src="images/ztz_shengtuolini_04.png"/>
+							</td>
+						</tr>
+					</table>
+				</div>
+					<!--大溪地隐藏-->
+		
+				<div class="haidao" id="daxidi">
+				<a name="daxidi"></a>
+				<span class="title">大溪地之旅</span><br/>
+				<table>
+					<tr>
+						<td class="left">
+							<span>简介：<br/>南太平洋超级度假天堂</span><br/>
+							<p>
+								&nbsp;&nbsp;天堂般的波拉波拉海岛生活，蓝的会发光的海面、特殊的水上屋，连呼吸都有奢华感觉。<hr/>
+							特色旅行：<br/>
+							①来一次浪漫的沙滩烛光晚宴，享用法国大餐。<br/>
+							②乘一艘帆船环岛游，看传说中的面包树。	<br/>	
+							③到海底喂食鲨鱼，和鲨鱼来一次亲密结束吧！
+		
+							</p>
+						</td>
+						<td class="center">
+							<p>
+								<span>准备：</span><br/>
+								【签证】大溪地属于南太平洋群岛之一，是法国领地，正式名称为法属波利尼西亚，前往大溪地需前往法国大使馆办理法属外岛签证。<hr/>
+								【交通】从国内可以经东京、奥克兰转机前往大溪地。<hr/>
+								【住宿】大溪地的酒店主要集中在靠近帕比提和普纳奥亚的西部海岸，从豪华高档的度假酒店，到经济型酒店都可供选择，各小岛如Bora和Moorea有很多豪华酒店，海上屋和一岛一酒店是蜜月旅行绝佳去处。
+							</p>
+							<table>
+								<tr>
+									<td><img src="images/ztz_daxidi_01.png"/></td>
+									<td><img src="images/ztz_daxidi_02.png"/></td>
+								</tr>
+							</table>
+						</td>
+						<td class="right">
+							<img src="images/ztz_daxidi_03.png"/><br/>
+							<img src="images/ztz_daxidi_04.png"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+					
+			<div class="main2">
+				<span class="lvyoukinds_title">都市风采</span><br/>
+				<table class="lvyoukinds">
+					<tr>
+						<td><a href="ztz_xianggang.html">
+							<img src="images/ztz_xianggang_lunhuan_02.png"/></a>
+							香港风采
+							<sub><a href="ztz_xianggang.html">[详情]</a></td></sub>
+						<td><a href="zy_xinjiapo.html">
+							<img src="images/zy_xinjiapo.jpg"/></a>
+							新加坡风采
+							<sub><a href="zy_xinjiapo.html">[详情]</a></td></sub></td>
+						<td><a href="zy-db.html"><img src="images/zy_diba.jpg"/></a>
+							迪拜风采
+							<sub><a href="zy-db.html">[详情]</a></td></sub></sub>
+						</td>
+						<td><a href="shanghai.html"><img src="images/shanghai.jpg"/></a>
+							上海风采
+							<sub><a href="shanghai.html">[详情]</a></td></sub></sub>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 古镇游，山水游 -->
+			<div class="main3">
+				<div class="gushan">
+					<table>
+						<tr>
+							<td>
+								<span class="lvyoukinds_title">古镇游</span><br/>
+								<a href="yunnan.html"><img src="images/guzhenyou.png"/></a>
+							</td>
+
+							<td>
+								<span class="lvyoukinds_title">山水游</span><br/>
+								<a href="shanshuiyou.html"><img src="images/ztz_shanshui01.jpg"/></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--特价机票开始-->
+		<div style="width:940px;height:auto;margin:10px auto;background-color:white;border:1px solid #d0d0d0;padding:5px;">
+			<div class="little_header"><img class="logos" src="images/ztz_tejiajipiao.png"/><a href="jipiaoyuding.html">特价机票</a></div>
+			<div style="width:940px;height:10px;margin:10px auto;background-color:#ccf;">
+			</div>
+			<div class="plane_tickets">
+				<div class="jipiaorili">
+					<select id="start_city"> 
+						<option>北京</option><option>上海</option>
+						<option>南京</option><option>广州</option>
+						<option>深圳</option><option>郑州</option>
+						<option>台湾</option><option>长春</option>
+					</select>
+					
+					<img src="images/ztz_shuangxiangjiantou_gray.png" id="shuangjiantou" onclick="city_jiaohuan();"/>
+
+					<select id="end_city">
+						<option>郑州</option><option>上海</option>
+						<option>南京</option><option>广州</option>
+						<option>深圳</option><option>北京</option>
+						<option>台湾</option><option>长春</option>
+					</select>
+					<span style="float:right;line-height:45px;font-size:15px;color:#0000ff;margin-right:20px;">国内30日特价机票</span>
+					<table cellspacing="1px">
+						<tr>
+							<th>日</th>
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+						</tr>
+
+						<tr>
+							<td><a href="#"><span>￥486</span><br/>05-08</a></td>
+							<td><a href="#"><span>￥512</span><br/>05-09</a></td>
+							<td><a href="#"><span>￥478</span><br/>05-10</a></td>
+							<td><a href="#"><span>￥485</span><br/>05-11</a></td>
+							<td><a href="#"><span>￥497</span><br/>05-12</a></td>
+							<td><a href="#"><span>￥503</span><br/>05-13</a></td>
+							<td><a href="#"><span>￥503</span><br/>05-14</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><span>￥503</span><br/>05-15</a></td>
+							<td><a href="#"><span>￥490</span><br/>05-16</a></td>
+							<td><a href="#"><span>￥531</span><br/>05-17</a></td>
+							<td><a href="#"><span>￥511</span><br/>05-18</a></td>
+							<td><a href="#"><span>￥511</span><br/>05-19</a></td>
+							<td><a href="#"><span style="color:red;">￥477</span><br/>05-20</a></td>
+							<td><a href="#"><span>￥511</span><br/>05-21</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><span>￥499</span><br/>05-22</a></td>
+							<td><a href="#"><span>￥499</span><br/>05-23</a></td>
+							<td><a href="#"><span style="color:red;">￥477</span><br/>05-24</a></td>
+							<td><a href="#"><span>￥486</span><br/>05-25</a></td>
+							<td><a href="#"><span>￥486</span><br/>05-26</a></td>
+							<td><a href="#"><span>￥533</span><br/>05-27</a></td>
+							<td><a href="#"><span>￥511</span><br/>05-28</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><span>￥487</span><br/>05-29</a></td>
+							<td><a href="#"><span style="color:red;">￥481</span><br/>05-30</a></td>
+							<td><a href="#"><span>￥482</span><br/>05-31</a></td>
+							<td><a href="#"><span>￥483</span><br/>06-01</a></td>
+							<td><a href="#"><span>￥488</span><br/>06-02</a></td>
+							<td><a href="#"><span>￥486</span><br/>06-03</a></td>
+							<td><a href="#"><span>￥486</span><br/>06-04</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><span>￥480</span><br/>06-05</a></td>
+							<td><a href="#"><span>￥522</span><br/>06-06</a></td>
+							<td><a href="#"><span>￥500</span><br/>06-07</a></td>
+							<td><a href="#"><span>￥516</span><br/>06-08</a></td>
+							<td><a href="#"><span>￥540</span><br/>06-09</a></td>
+							<td><a href="#"><span style="color:red;">￥460</span><br/>06-10</a></td>
+							<td><a href="#"><span style="color:red;">￥465</span><br/>06-11</a></td>
+						</tr>
+					</table>
+				</div>
+					
+				<div class="tejia">
+					<div class="tejia_header">
+						<div class="start_city">
+							<ul>
+							<li><a href="#" >北京</a></li>
+							<li class="margin_b"><a href="#" >郑州</a></li>
+							<li class="margin_b"><a href="#">上海</a></li>
+							<li class="margin_b"><a href="#">广州</a></li>
+							<a class="more" style="float:right;color:#ccccff;text-decoration:none;font-size:15px;" href="#">更多>></a>
+							</ul>
+						</div>
+						<table class="lizi" cellspacing="0">
+							<tr>
+								<td>
+									<a href="#"><span class="space">北京-大同</span><br/>
+									<span class="price">￥39</span>
+									<span class="count">0.6折</span><br/>
+									<span class="date">05-12</span></a>
+								</td>
+								<td>
+									<a href="#"><span class="space">北京-赤峰</span><br/>
+									<span class="price">￥102</span>
+									<span class="count">1.8折</span><br/>
+									<span class="date">06-12</span></a>
+								</td>
+								<td>
+									<a href="#"><span class="space">北京-包头</span><br/>
+									<span class="price">￥122</span>
+									<span class="count">2.0折</span><br/>
+									<span class="date">05-22</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#"><span class="space">北京-济宁</span><br/>
+									<span class="price">￥155</span>
+									<span class="count">2.3折</span><br/>
+									<span class="date">05-22</span></a>
+								</td>
+								<td>
+									<a href="#"><span class="space">北京-大同</span><br/>
+									<span class="price">￥39</span>
+									<span class="count">0.6折</span><br/>
+									<span class="date">05-12</span></a>
+								</td>
+								<td>
+									<a href="#"><span class="space">北京-临沂</span><br/>
+									<span class="price">￥212</span>
+									<span class="count">2.8折</span><br/>
+									<span class="date">05-22</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#"><span class="space">北京-长春</span><br/>
+									<span class="price">￥253</span>
+									<span class="count">2.4折</span><br/>
+									<span class="date">05-24</span></a>
+								</td>
+								<td>
+									<a href="#"><span class="space">北京-银川</span><br/>
+									<span class="price">￥230</span>
+									<span class="count">1.9折</span><br/>
+									<span class="date">05-30</span></a>
+								</td>
+								<td>
+									<a href="#"><span class="space">北京-阿尔山</span><br/>
+									<span class="price">￥222</span>
+									<span class="count">1.8折</span><br/>
+									<span class="date">05-30</span></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--特价机票结束-->
+
+		<!--国内酒店开始-->
+		<div style="width:940px;height:auto;margin:10px auto;background-color:white;padding:5px;
+				border:1px solid #d0d0d0;">
+			<div class="little_header"><img class="logos" style="position:relative;top:5px;" src="images/ztz_guoneijiudian.png"/><a class="" href="guoneijiudian.html" style="color:#00aeae;">国内酒店</a>
+			</div>
+				<div style="width:940px;height:10px;margin:10px auto;background-color:#00e3e3;">
+				</div>
+				
+				<div class="guoneijiudian">
+					<div class="hotel_kinds">
+						<ul>
+						<li style="margin-left:3px"><a onmouseover="change_color(1);" onmouseout="aaa(1)" id="01" href="#">北京</a></li>
+						
+						<li class="margin_b"><a onmouseover="change_color(2);" onmouseout="aaa(2)" id="02" href="#">广州</a></li>
+						<li class="margin_b"><a onmouseover="change_color(3);" onmouseout="aaa(3)" id="03" href="#">上海</a></li>
+						<li class="margin_b"><a onmouseover="change_color(4);" onmouseout="aaa(4)" id="04" href="#">深圳</a></li>					
+						<a href="#" style="line-height:20px;float:right;color:#00aeae;text-decoration:none;font-size:15px;">更多>></a>
+						</ul>
+					</div>
+					<div class="select_kinds">
+						<ul>
+						
+						<li>类型<select>
+								<option>快捷宾馆</option>
+								<option>青年旅社</option>
+								<option>经济型</option>
+								<option>农家小院</option>
+								<option>公寓</option>
+								<option>二星</option>
+								<option>三星</option>
+								<option>四星高档</option>
+								<option>五星豪华</option>
+								<option>总统套房</option>
+								<option>不限</option>
+							</select>
+						</li>
+
+						<li>价格<select>
+								<option>1000以下</option>
+								<option>1000-2000</option>
+								<option>2000-2300</option>
+								<option>2300-2600</option>
+								<option>2600-4000</option>
+								<option>不限</option>
+							</select>
+						</li>
+
+
+						<li>区域<select>
+								<option>火车站</option>
+								<option>景区</option>
+								<option>郊区</option>
+								<option>市区</option>
+								<option>不限</option>
+							</select>
+						</li>
+
+						<li>周边<select>
+								<option>银行</option>
+								<option>网吧</option>
+								<option>火车站</option>
+								<option>地铁</option>
+								<option>公交站</option>
+								<option>美食</option>
+								<option>不限</option>
+							</select>
+						</li>
+
+						</ul>
+					</div>
+					<table class="hotels" cellspacing="3px" id="beijing">
+						<tr>
+							<td><a href="#">
+								<img src="images/index_beijing01.jpg"/></a>
+								<span class="jiudian_name">瑰丽酒店</span> 
+								<span class="jiudian_price">￥2600</span><br/>
+							</td>
+
+							<td><a href="#">
+								<img src="images/index_beijing02.jpg"/></a>
+								<span class="jiudian_name">华尔道夫酒店</span> 
+								<span class="jiudian_price">￥2312</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_beijing03.jpg"/></a>
+								<span class="jiudian_name">嘉里大酒店</span> 
+								<span class="jiudian_price">￥999</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_beijing04.jpg"/></a>
+								<span class="jiudian_name">盘古七星酒店</span> 
+								<span class="jiudian_price">￥2440</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_beijing05.jpg"/></a>
+								<span class="jiudian_name">怡亨酒店</span> 
+								<span class="jiudian_price">￥2070</span>
+							</td>
+						</tr>
+					</table>
+				<!--广州-->
+					<table class="hotels" cellspacing="3px" id="guangzhou">
+						<tr>
+							
+							<td><a href="#">
+								<img src="images/index_guangzhou01.jpg"/></a>
+								<span class="jiudian_name">从化温泉度假村</span> 
+								<span class="jiudian_price">￥833</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_guangzhou02.jpg"/></a>
+								<span class="jiudian_name">富丽思卡尔顿酒店</span> 
+								<span class="jiudian_price">￥1490</span>
+							</td>
+
+							<td><a href="#">
+								<img src="images/index_guangzhou03.jpg"/></a>
+								<span class="jiudian_name">九龙湖国王酒店</span> 
+								<span class="jiudian_price">￥1328</span>
+							</td>
+
+							<td><a href="#">
+								<img src="images/index_guangzhou04.jpg"/></a>
+								<span class="jiudian_name">四季酒店</span> 
+								<span class="jiudian_price">￥2080</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_guangzhou05.jpg"/></a>
+								<span class="jiudian_name">文华酒店</span> 
+								<span class="jiudian_price">￥1601</span>
+							</td>
+							
+						</tr>
+					</table>
+					<!--上海-->
+					<table class="hotels" cellspacing="3px" id="shanghai">
+						<tr>
+							<td><a href="#">
+								<img src="images/index_shanghai01.jpg"/></a>
+								<span class="jiudian_name">半岛酒店</span> 
+								<span class="jiudian_price">￥2069</span>
+							</td>
+
+							<td><a href="#">
+								<img src="images/index_shanghai02.jpg"/></a>
+								<span class="jiudian_name">静安香格里拉大酒店</span> 
+								<span class="jiudian_price">￥2894</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_shanghai03.jpg"/></a>
+								<span class="jiudian_name">浦东四季酒店</span> 
+								<span class="jiudian_price">￥1942</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_shanghai04.jpg"/></a>
+								<span class="jiudian_name">浦东文华东方酒店</span> 
+								<span class="jiudian_price">￥1988</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_shanghai05.jpg"/></a>
+								<span class="jiudian_name">新天地朗廷酒店</span> 
+								<span class="jiudian_price">￥2646</span>
+							</td>
+						</tr>
+					</table>
+					<!--深圳-->
+					<table class="hotels" cellspacing="3px" id="shenzhen">
+						<tr>
+							<td><a href="#">
+								<img src="images/index_shenzhen01.jpg"/></a>
+								<span class="jiudian_name">华侨城蓝汐精品酒店</span> 
+								<span class="jiudian_price">￥1718</span>
+							</td>
+
+							<td><a href="#">
+								<img src="images/index_shenzhen02.jpg"/></a>
+								<span class="jiudian_name">华侨城洲际大酒店</span> 
+								<span class="jiudian_price">￥1647</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_shenzhen03.jpg"/></a>
+								<span class="jiudian_name">君悦酒店</span> 
+								<span class="jiudian_price">￥1551</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_shenzhen04.jpg"/></a>
+								<span class="jiudian_name">瑞吉酒店</span> 
+								<span class="jiudian_price">￥2197</span>
+							</td>
+							
+							<td><a href="#">
+								<img src="images/index_shenzhen05.jpg"/></a>
+								<span class="jiudian_name">星河丽思卡尔顿酒店</span> 
+								<span class="jiudian_price">￥3088</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		<!--酒店结束-->
+		
+		<!--国内旅游开始-->
+		<div class="guoneilvyou">
+			<div class="little_header">
+			<img class="logos" src="images/ztz_guoneilvyou.png"/><a href="guoneilvyou.html" style="color:#2849ff;">国内旅游</a>
+			</div>
+				<div style="width:940px;height:10px;margin:10px auto;background-color:#66b3ff;">
+				</div>
+				
+			<div class="guonei_left">
+				<div class="guonei_head">
+					<ul>
+					<li style="margin-left:3px"><a href="#">踏青阡陌</a></li>
+					<li class="margin_b"><a href="#">徒步攀岩</a></li>
+					<li class="margin_b"><a href="#">清凉一夏</a></li>
+					</ul>
+				</div>
+				<table class="guonei_citys" cellpadding="0">
+					<tr>
+						<td><img src="images/ztz_guoneilvyou_img01.png" width="295px" height="185px" /></td> <!-- 295*185 -->
+					</tr>
+					
+					<tr>
+						<td>							
+							<table cellpadding="0">
+								<tr>
+									<td class="demo">
+										<div>
+											<span>>>登山休闲</span>
+										</div><br/>
+										<div>
+											<ul>
+											<li><a href="#">华山</a></li>
+											<li><a href="#">泰山</a></li>
+											<li><a href="#">嵩山</a></li>
+											</ul>
+										</div>
+										<div>
+											<ul>
+											<li><a href="#">衡山</a></li>
+											<li><a href="#">恒山</a></li>
+											<li><a href="#">香山</a></li>
+											</ul>
+										</div>
+										<div>
+											<ul>
+											<li><a href="#">黄山</a></li>
+											<li><a href="#">庐山</a></li>
+											<li><a href="#">尧山</a></li>
+											</ul>
+										</div>
+									</td>
+									<td class="demo">
+										<div>
+											<span>>>春花烂漫</span>
+										</div><br/>
+										<div>
+											<ul>
+											<li><a href="#">青岛</a></li>
+											<li><a href="#">扬州</a></li>
+											<li><a href="#">苏州</a></li>
+											</ul>
+										</div>
+										<div>
+											<ul>
+											<li><a href="#">乌镇</a></li>
+											<li><a href="#">大理</a></li>
+											<li><a href="#">台北</a></li>
+											</ul>
+										</div>
+										<div>
+											<ul>
+											<li><a href="#">三亚</a></li>
+											<li><a href="#">成都</a></li>
+											<li><a href="#">深圳</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+	
+			<div class="guonei_right">
+				<div class="guonei_head_right">
+					<ul>
+					<li><a href="#" style="color:white;background:#66b3ff;">桂林</a></li>
+					<li class="margin_b"><a href="#">杭州</a></li>
+					<li class="margin_b"><a href="#">拉萨</a></li>
+					<li class="margin_b"><a href="#">绍兴</a></li>
+					<li class="margin_b"><a href="#">苏州</a></li>
+					<li class="margin_b"><a href="#">大连</a></li>
+					<a href="#" style="float:right;font-size:15px;text-decoration:none;color:#66b3ff;">更多>></a>
+					</ul>
+				</div>
+				<div class="guonei_citys">
+					<div class="guonei_imgs">
+						<ul>
+						<li><a href="#"><img src="images/index_guonei01.jpg"/></a></li>
+						<li class="margin_left_15px"><a href="#"><img src="images/index_guonei02.jpg"/></a></li>
+						<li class="margin_left_15px"><a href="#"><img src="images/index_guonei03.jpg"/></a></li>
+						</ul>
+					</div>
+
+					<div class="guonei_jieshao">
+						<ul>
+						<li><a href="#"><跟团游><拉萨-西宁-兰州5日游>布达拉宫/青<span>￥2499</span></a></li>
+						<li class="margin_left_15px"><a href="#"><跟团游><桂林-漓江-阳朔7日游>两江四湖/十<span>￥3014</span></a></li>
+						<li class="margin_left_15px"><a href="#"><跟团游><厦门-鼓浪屿4日游>厦门大学一日鼓<span>￥2689</span></a></li>
+						</ul>
+					</div>
+
+					<div class="guonei_imgs">
+						<ul>
+						<li><a href="#"><img src="images/index_guonei04.jpg"/></a></li>
+						<li class="margin_left_15px"><a href="#"><img src="images/index_guonei05.jpg"/></a></li>
+						<li class="margin_left_15px"><a href="#"><img src="images/index_guonei06.jpg"/></a></li>
+						</ul>
+					</div>
+
+					<div class="guonei_jieshao">
+						<ul>
+						<li><a href="#"><跟团游><西双版纳-香格里拉-昆明-普洱7日游<span>￥3902</span></a></li>
+						<li class="margin_left_15px"><a href="#"><跟团游><三亚-娱支洲双飞6日游>亚龙湾国家<span>￥3590</span></a></li>
+						<li class="margin_left_15px"><a href="#"><跟团游><九寨沟-成都-黄龙-都江堰>品川菜<span>￥2456</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+                  
+		</div><!-- 国内旅游结束-->
+		
+		<!--友情网站链接-->
+		<div class="lianjie">
+			<span class="youqinglianjie">友情网站链接<br/></span>
+			<table>
+				<tr>
+					<td><a	target="_blank"	href="http://www.dxs001.com"><img src="images/ztz_daxueshenFirst.png"/></a></td>
+
+					<td><a	target="_blank"	href="http://www.tuniu.com/?p=13663&cmpid=mkt_03026701&utm_campaign=daohang&utm_source=123.sogou.com&utm_medium=display"><img src="images/ztz_tuniu.png"/></a></td>
+
+					<td><a			target="_blank"
+					
+					href="http://jipiao.kuxun.cn/index_s.html?fromid=Ksogou123-S1354101-
+					T1076471&est=marketing">
+					<img src="images/ztz_tengxun.png"/></a></td>
+
+					<td><a href="http://www.ly.com/#refid=14640675" target="_blank"><img src="images/ztz_tongcheng.png"/></a></td>
+
+					<td><a target="_blank" href="http://www.ctrip.com/?allianceid=14666&sid=440096&ouid=000401app-&utm_medium=&utm_campaign=&utm_source=&isctrip="><img src="images/ztz_xiecheng.png"/></a></td>
+					<td><a target="_blank" href="http://www.elong.com/?banid=sogou&FlowStati=other_5174"><img src="images/ztz_yilong.png"/></a></td>
+					
+					<td><a target="_blank" href="http://www.tieyou.com/"><img src="images/ztz_tieyou.png"/></a></td>
+					<td><a target="_blank" href="http://www.qunar.com/?ex_track=auto_4ec1d9f1"><img src="images/ztz_qunaer.png"/></a></td>
+				</tr>
+			</table>	
+		</div>
+		
+		<div class="wangyeweibu">
+			<a href="#">Investor&nbsp;Relations</a><span>|</span><a href="#">关于我们</a><span>|</span><a href="#">安全保障</a><span>|</span><a href="#">免责声明</a><span>|</span><a href="#">网站地图</a><span>|</span><a href="#">友情网站推荐</a>
+		</div>
+
+	</body>
+</html>

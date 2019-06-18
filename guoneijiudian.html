@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>国内酒店</title>
+<link type="text/css" href="css/navier.css" rel="stylesheet" />
+<style>
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;}
+div.navier ul {height:40px;}
+div.navier ul li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier ul li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px;}
+div.navier li a:hover{background-color:#ad5a5a;color:#fff}
+li.cl{margin-left:12px;}
+.main{
+	height:1400px;
+	width:950px;
+	border:0px solid;
+	margin-top:15px;
+	margin:1px auto;
+	}
+.left{
+	height:380px;
+	width:380px;
+	margin:5px;
+	border:0px solid;
+	margin-top:5px;
+	float:left;
+	text-align:center;
+	background-image:url(images/sosuo.png);
+	border-radius:6px;
+	}
+.right{
+	background-image:url(images/jiudian01.png);
+	height:378px;
+	width:540px;
+	margin:5px;
+	border:1px solid;
+	float:left;
+	}
+.fangkuai{
+	height:200px;
+	width:302px;
+	margin:5px;
+	border:0px solid #642100;
+	float:left;
+	}
+.fangkuai img:hover{opacity:0.7}
+.content{
+	width:950px;
+	height:590px;
+	margin:1px;
+	border:0px solid;
+	float:left;
+	margin-top:20px;
+	background-color:#FFFFF4;
+	}
+.content1{	
+	width:950px;
+	height:30px;
+	margin:1px;
+	border:0px solid;
+	color:#842B00;
+	float:left;
+	}
+.contentleft{
+	width:280px;
+	height:530px;
+	margin:5px;
+	border:0px solid;
+	float:left;
+	margin-foot:1px;
+	
+	}
+.contentright{
+	width:643px;
+	height:260px;
+	margin:4px;
+	border:0px solid;
+	float:left;
+	}
+.contentright li {
+	width:300px;height:230px;float:left;margin-right:3px;margin-left:15px;margin-top:5px;
+	}
+.contentright li image{
+	width:300px;height:235px;cursor:pointer ;padding:8px;margin-top:5px;
+	}
+.texts{
+	width:643px;height:30px;color:#842B00;
+	}
+.texts li{
+	fioat:left;
+	}
+.foot{
+	width:936px;
+	height:150px;
+	border:2px solid;
+	float:left;
+	margin-top:8px;
+	margin-left:3px;
+	color:#842B00;
+	}
+.foot li{
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+	padding:5px;
+	width:100px;
+	text-align:center;
+	color:#842B00;
+	}
+.foot li image{
+	width:100px;
+	padding:2px;
+	margin-top:2px;
+	}
+
+table.sousuo{
+	width:320px;
+	height:320px;
+	text-align:center
+	}
+table.sousuo tr td input{
+	width:180px;
+	height:30px;
+	}
+.ziti{
+	font-size:25px;
+	color:#FBFFFD
+	}
+.xiahuxian{
+	width:939px;
+	height:1px;
+	background-color:#642100;
+	}
+.shanghai:hover{ width:270px; height:520px; border:5px solid white;}
+.remenchengshi:hover{ width:290px; height:192;border:5px solid white;}
+</style>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/jiudian01.png)","url(images/jiudian02.png)",
+							"url(images/jiudian03.png)");
+		document.getElementById("right").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==3){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+</head>
+<body>
+	<!--头部-->
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:#ad5a5a;margin-bottom:15px"></div>
+
+	<div class="main">
+	<div class="left">
+		<table class="sousuo">
+			<caption class="ziti">&nbsp&nbsp&nbsp&nbsp&nbsp搜索酒店</caption>
+			<tr>
+				<td>目的地</td>
+				<td><input type="text" name="s1" /></td>
+			</tr>
+			<tr>
+				<td>入住时间</td>
+				<td><input type="datetime-local" name="s2" /></td></tr>
+			<tr>
+				<td>退房时间</td>
+				<td><input type="datetime-local" name="s3" /></td></tr>
+			<tr>
+				<td>关键词</td>
+				<td><input type="text" name="s4" /></td></tr>
+			<tr>
+				<td>&nbsp</td>
+				<td><input type="image" src="images/按钮.png"  alt="submit"/></td></tr>
+		</table>
+	</div>
+	<div class="right" id="right"></div>
+	<div class="fangkuai"><a href="#"  ><img src="images/111.jpg" width="302px" height="200px" /></a></div>
+	<div class="fangkuai"><a href="#"  ><img src="images/222.jpg" width="302px" height="200px" /></div>
+	<div class="fangkuai"><a href="#"  ><img src="images/333.jpg" width="302px" height="200px" /></div>
+	<div class="content">
+	<div class="content1">
+		热门城市<br />
+			<hr class="xiahuxian"/>
+			</div>
+	<div class="contentleft"><a href="#"><img src="images/shanghai.jpg" class="shanghai"/></a></div>
+	<div class="contentright">
+			<ul>
+				<li><a href="#"/><img src="images/beijing2.jpg"  class="remenchengshi"/></a></li>
+				<li><a href="#"/><img src="images/guangzhou.jpg" class="remenchengshi"/></li>
+				
+			</ul>
+			<ul class="texts">
+				<li><span>北京</span></li>
+				<li><span>广州</span></li>
+			</ul>
+				</div>
+	<div class="contentright">
+			<ul>
+				<li><a href="#"/><img src="images/shenzhen.jpg" class="remenchengshi"/></a></li>
+				<li><a href="#"/><img src="images/hangzhou.jpg" class="remenchengshi"/></li>
+				
+			</ul>
+			<ul class="texts">
+				<li><span>深圳</span></li>
+				<li><span>杭州</span></li>
+				
+			</ul>
+				</div></div>
+	<div class="content1">
+		明星酒店<br>
+			<hr  class="xiahuxian" /></div>
+			<div class="foot">
+				<ul>
+					
+					<li><a href="#"/><img src="images/bd.jpg" /></a></li>
+					<li><a href="#"/><img src="images/gelinhaotai.jpg" /></li>				
+					<li><a href="#"/><img src="images/hanting.jpg" /></a></li>
+					<li><a href="#"/><img src="images/kaiyuan.jpg" /></li>
+					<li><a href="#"/><img src="images/rujia.jpg" /></a></li>
+					<li><a href="#"/><img src="images/wanhao.jpg" /></li>
+					<li><a href="#"/><img src="images/xianggelila.jpg" /></a></li>
+					<li><a href="#"/><img src="images/xilaideng.jpg" /></li>
+					
+				</ul>
+				<ul >
+					
+					<li>半岛</li>
+					<li>格林豪泰</li>
+					
+					<li>汉庭</li>
+					<li>开元</li>
+					<li>如家</li>
+					<li>万豪</li>
+					<li>香格里拉</li>
+					<li>喜来登</li>
+					
+				</ul>
+			</div>
+	</div>
+</body>
+</html>

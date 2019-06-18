@@ -1,0 +1,232 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+<title>旅游指南</title>
+
+<link type="text/css" href="css/navier.css" rel="stylesheet"/>
+
+<style>
+*{margin:0px;padding:0px;font-family:微软雅黑;}
+li{list-style-type:none;}
+
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+.navier,.header,.searcher_line,.leader,.bodyer{margin:0px auto;width:950px;}
+
+/*导航栏*/
+div.navier{height:40px;}
+div.navier ul {height:40px;}
+div.navier ul li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier ul li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px;}
+div.navier ul li a:hover{background-color:#f00;color:#fff}
+li.cl{margin-left:12px;}
+
+
+/*搜索栏*/
+div.searcher_line{margin:10px auto;height:70px;}
+div.searcher_line form{float:right;margin-top:13px;height:40px;width:700px;}
+
+div.location{width:226px;border:2px solid red;height:37px;float:left;margin-top:13px;cursor:pointer}
+div.location span{font-size:15px;position:relative;bottom:8px;}
+div.location img {margin-top:3px;margin-left:20px;}
+img.il{float:right;position:relative;right:10px;top:2px}
+div.location:hover{opacity:0.6}
+
+input.search_kuang{width:537px;height:40px;border:2px solid red;
+		position:relative;left:8px;font-size:16px;outline:none;}
+
+input.sousuo{background-color:red;color:white;font-size:16px;width:155px;height:40px;cursor:pointer;
+			 border:2px solid red;outline:none;font-size:16px;}
+
+/*导航中的导航*/
+div.leader{height:357px;}
+.leader_left{border:1px solid red;border-bottom:0px;}
+div.leader_left{width:230px;height:357px;float:left;}
+div.leader_left ul{width:230px;height:357px;padding:0px;margin:0px;list-style-type:none;}
+div.leader_left ul li {width:230px;height:50px;list-style-type:none;line-height:50px;border-bottom:1px solid red;
+					cursor:pointer;font-size:15px;}
+div.leader_left ul li:hover{opacity:0.6}
+div.leader_left ul li img.logos{position:relative;top:5px;margin-left:20px;}	 
+img.ir{float:right;position:relative;top:15px;right:10px;}
+
+
+div.leader_right{width:690px;height:357px;float:right;}
+
+div.bodyer{width:940px;height:auto;margin:50px auto 0px auto;
+			border:2px solid red;padding:5px}
+div.bodyer a:hover{color:blue}
+span.zhinan{font-size:16px;}
+
+div.cities{width:950px;height:30px;}
+div.cities li {float:left;width:50px;margin-left:10px;}
+div.cities li a {text-decoration:none;color:black;font-size:12px;line-height:30px;}
+
+div.provides{margin:3px auto 3px auto;color:blue;font-size:13px}
+  
+</style>
+</head>
+<body>
+	<!--头部-->
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:red;">
+	</div>
+
+
+	<!--搜索栏-->
+
+	<div class="searcher_line">
+		<div class="location">
+			<img src="images/daohang_logo_location.png"/><span>我的位置</span><img class="il" src="images/daohang_logo_right.png"/>
+		</div>
+		<form>
+			<input type="text" class="search_kuang" placeholder="香港"/>
+			<input type="button" value="搜索" class="sousuo"/>
+		</form>
+	</div>
+	
+	<!-- 导航中的导航 -->
+
+	<div class="leader">
+		
+		<div class="leader_left"> 
+			<ul>
+			<li><img class="logos" src="images/daohang_logo_dangji.png"/>当季热门<img class="ir" src="images/daohang_logo_right.png"/></li>
+			<li><img class="logos" src="images/daohang_logo_jingxuanmudidi.png"/>精选路线<img class="ir" src="images/daohang_logo_right.png"/></li>
+			<li><img class="logos" src="images/daohang_logo_dujia.png"/>休闲度假<img class="ir" src="images/daohang_logo_right.png"/></li>
+			<li><img class="logos" src="images/daohang_logo_guonei.png"/>国内风光<img class="ir" src="images/daohang_logo_right.png"/></li>
+			<li><img class="logos" src="images/daohang_logo_dayangzhou.png"/>大洋洲<img class="ir" src="images/daohang_logo_right.png"/></li>
+			<li><img class="logos" src="images/daohang_logo_ouzhou.png"/>欧洲<img class="ir" src="images/daohang_logo_right.png"/></li>
+			<li><img class="logos" src="images/daohang_logo_beimeizhou.png"/>北美洲<img class="ir" src="images/daohang_logo_right.png"/></li>
+			</ul>
+		</div>
+		<!--导航右侧-->
+	
+		<div class="leader_right">
+			<img src="images/daohang_main.png" />
+		</div>
+	</div>
+
+	<div class="bodyer">
+		<span class="zhinan">旅游指南</span>
+
+		<div class="provides">浙江</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">乌镇</a></li><li><a href="#">雁荡山</a></li><li><a href="#">安吉</a></li>
+			<li><a href="#">杭州</a></li><li><a href="#">舟山</a></li><li><a href="#">象山</a></li>
+			<li><a href="#">西塘</a></li><li><a href="#">横店</a></li><li><a href="#">嘉兴</a></li>
+			<li><a href="#">千岛湖</a></li><li><a href="#">绍兴</a></li><li><a href="#">朱家尖</a></li>
+			<li><a href="#">普陀山</a></li><li><a href="#">宁波</a></li><li><a href="#">天台山</a></li>
+			</ul>
+		</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">莫干山</a></li><li><a href="#">天目山</a></li><li><a href="#">楠溪江</a></li>
+			<li><a href="#">桃花岛</a></li>
+			</ul>
+		</div>
+	
+		<div class="provides">山东</div>
+
+		<div class="cities">
+			<ul>
+			<li><a href="#">青岛</a></li><li><a href="#">威海</a></li><li><a href="#">枣庄</a></li>
+			<li><a href="#">泰山</a></li><li><a href="#">烟台</a></li><li><a href="#">潍坊</a></li>
+			<li><a href="#">日照</a></li><li><a href="#">长岛</a></li><li><a href="#">临沂</a></li>
+			<li><a href="#">济南</a></li><li><a href="#">曲阜</a></li><li><a href="#">蓬莱</a></li>
+			<li><a href="#">淄博</a></li><li><a href="#">东营</a></li>
+			</ul>
+		</div>
+
+		<div class="provides">江西</div>
+
+		<div class="cities">
+			<ul>
+			<li><a href="#">庐山</a></li><li><a href="#">三清山</a></li><li><a href="#">明月山</a></li>
+			<li><a href="#">宜春</a></li><li><a href="#">九江</a></li><li><a href="#">赣州</a></li>
+			<li><a href="#">上饶</a></li><li><a href="#">南昌</a></li><li><a href="#">景德镇</a></li>
+			<li><a href="#">吉安</a></li><li><a href="#">井冈山</a></li><li><a href="#">龙虎山</a></li>
+			</ul>
+		</div>
+
+		<div class="provides">河南</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">商丘</a></li><li><a href="#">郑州</a></li><li><a href="#">开封</a></li>
+			<li><a href="#">信阳</a></li><li><a href="#">南阳</a></li><li><a href="#">洛阳</a></li>
+			<li><a href="#">周口</a></li><li><a href="#">安阳</a></li><li><a href="#">三门峡</a></li>
+			<li><a href="#">濮阳</a></li><li><a href="#">驻马店</a></li><li><a href="#">三亚</a></li>
+			<li><a href="#">民权</a></li><li><a href="#">永城</a></li><li>
+			</ul>
+		</div>
+
+		<div class="provides">江苏</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">南京</a></li><li><a href="#">苏州</a></li><li><a href="#">无锡</a></li>
+			<li><a href="#">周庄</a></li><li><a href="#">扬州</a></li><li><a href="#">连云港</a></li>
+			<li><a href="#">天目湖</a></li><li><a href="#">同里</a></li><li><a href="#">徐州</a></li>
+			<li><a href="#">无锡</a></li><li><a href="#">常州</a></li><li><a href="#">宜兴</a></li>
+			<li><a href="#">泰州</a></li><li><a href="#">南通</a></li>
+			</ul>
+		</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">太湖</a></li><li><a href="#">昆山</a></li>
+			</ul>
+		</div>
+
+		<div class="provides">安徽</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">黄山</a></li><li><a href="#">合肥</a></li><li><a href="#">池州</a></li>
+			<li><a href="#">九华山</a></li><li><a href="#">芜湖</a></li><li><a href="#">安庆</a></li>
+			<li><a href="#">宏村</a></li><li><a href="#">宣城</a></li><li><a href="#">巢湖</a></li>
+			<li><a href="#">天柱山</a></li><li><a href="#">绩溪</a></li><li><a href="#">西递</a></li>
+			</ul>
+		</div>
+
+		<div class="provides">辽宁</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">大连</a></li><li><a href="#">营口</a></li>
+			<li><a href="#">沈阳</a></li><li><a href="#">本溪</a></li>
+			<li><a href="#">兴城</a></li><li><a href="#">旅顺</a></li>
+			<li><a href="#">丹东</a></li><li><a href="#">葫芦岛</a></li>
+			</ul>
+		</div>
+
+		<div class="provides">直辖市</div>
+		<div class="cities">
+			<ul>
+			<li><a href="#">北京</a></li><li><a href="#">天津</a></li><li><a href="#">重庆</a></li>
+			<li><a href="#">上海</a></li><li><a href="#">香港</a></li><li><a href="#">澳门</a></li>
+			</ul>
+		</div>
+
+	</div>
+	
+</body>
+</html>

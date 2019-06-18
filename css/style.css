@@ -1,0 +1,172 @@
+
+*{margin:0px;padding:0px;outline:none;font-family:微软雅黑;}
+li{list-style-type:none;}
+
+body{background-color:#f0f0f0;}
+div{box-sizing:content-box;}
+
+div.top {width:950px;height:560px;margin:0px auto;}
+div.picture{width:100%;height:440px;background-size:cover;
+		background-image:url(../images/index_headImage01.png);}
+/*头部机票开始*/
+div.register{width:480px;height:300px;padding:10px;float:left;color:#fff;font-family:华文细黑;font-size:16px;
+		margin-top:60px;background:rgba(240,240,240,0.2);}
+
+div.register table {width:80%;height:40%;font-size:13pt;}
+div.register table td{color:#fff}
+div.register table input {height:30px;width:80%; border-radius:5px;outline:none;color:#fff}
+input.tijiao{background:rgba(235,211,232,0.2);font-size:14px;font-family:华文细黑;cursor:pointer;margin-top:10px;}
+input.tijiao:hover{opacity:0.8}
+/*头部机票结束*/
+
+/*渐变色区域*/
+div.jianbianse{width:100%;height:80px;border-top-color:#2ea3ff;background-image:url(../images/index_jianbianse.png);
+			background-repeat:repeat-x;}
+/* background-image: -webkit-gradient(linear, 0 0,0 bottom,
+					from(rgba(46,163,255,1)), to(rgba(240,240,240,1)));*/
+
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+div.header li img{float:left;width:237.5px;height:80px;}
+
+div.lianjie{width:950px;margin:0px auto;background-color:#fff}
+div.lianjie table{width:950px;}
+div.lianjie table img {width:116px}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;}
+div.navier ul {height:40px;}
+div.navier ul li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier ul li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px;}
+div.navier li a:hover{background-color:#6c6c6c;color:#fff}
+li.cl{margin-left:12px;}
+
+
+/*海岛之旅*/
+div.main1 {width:940px;height:250px;border-bottom:1px solid #c4e1ff ;margin:0px auto;}
+
+span.lvyoukinds_title,span.lvyoukinds_title a{margin-left:5px;margin-top:5px;font-size:16px;
+							color:#ffc78e;text-decoration:none;}
+table.lvyoukinds{width:100%;height:80%;}
+table.lvyoukinds tr td{width:20%;text-align:center;}
+table.lvyoukinds tr td a{text-decoration:none;color:blue;cursor:pointer;}
+table.lvyoukinds tr td img {width:220px;height:180px;}
+table.lvyoukinds tr td img:hover {opacity:0.7}
+div.main2 {width:940px;height:250px;margin:10px auto;}
+
+/*隐藏的区域*/
+div.haidao {width:940px;height:auto;margin:20px auto;border-radius:10px;border-top:1px dotted #000;border-bottom:1px dotted #000}
+div.haidao img {border-radius:10px;}
+
+/*隐藏区域标题*/
+span.title {margin-left:5px;margin-top:5px;font-size:18px;font-family:隶书;color:#000;}
+div.haidao table {width:940px;height:410px;margin:0px auto;border-radius:10px;}
+div.haidao table td {border-radius:10px;}
+td.left{width:150px;font-size:12px;	}
+td.left span ,td.center span{color:white;font-size:15px;}
+td.center{width:640px;font-size:12px;}
+td.center table {width:640px;height:200px;}
+td.center table td img {width:320px;height:200px;}
+td.right{width:150px;font-size:12px;}
+td.right img {width:150px;height:200px;}
+#maerdaifu,#maoliqiusi,#shengtuolini,#daxidi {display:none;position:relative;}
+
+/*网页尾部、关于我们*/
+div.wangyeweibu {
+	width:100%;height:45px;background-color:#9d9d9d;line-height:45px;text-align:center;
+}
+div.wangyeweibu a{text-decoration:none;color:#bebebe;font-size:12px;}
+div.wangyeweibu span {color:#bebebe;font-size:12px;}
+div.wangyeweibu a:hover {color:red;text-decoration:underline;}	
+
+
+/*古镇游，山水游*/
+.main3{width:940px;height:auto;margin:0px auto;}
+
+.main3 table tr td{width:470px;height:240px;}
+.main3 img {width:460px;height:230px;}
+
+/*特价机票*/
+div.little_header a{font-size:17px;color:blue;text-decoration:none;}
+img.logos {position:relative;top:7px;}
+div.plane_tickets{width:950px;height:340px;}
+div.jipiaorili {width:445px;height:330px;float:left;padding-left:5px;}
+div.jipiaorili select {width:100px;height:30px;font-size:15px;border:1px solid #ccf;}
+div.jipiaorili img {cursor:pointer;width:40px;height:25px;position:relative;top:10px;}
+div.jipiaorili table {width:430;height:293px;background-color:#ccf;border:10px solid #ccf;}
+div.jipiaorili table tr td {background-color:#fff;text-align:center;}
+div.jipiaorili table tr td a {text-decoration:none;font-size:12px;}
+div.jipiaorili table tr td:hover{background-color:#e6e6f2;}
+div.jipiaorili table tr td a span {font-size:15px;color:blue;}
+div.tejia {width:465px;height:335px;float:right;color:blue;}
+div.tejia_header {width:465px;height:45px;line-height:45px;}
+#start_city,#end_city{font-size:14px;}
+div.start_city{width:460px;height:20px;}
+div.start_city a {font-size:14px;color:blue;text-decoration:none;display:block;}
+div.start_city li a:hover{background-color:#ccf;color:#fff;}
+div.start_city li {float:left;width:70px;border:1px solid #ccf;
+		height:20px;text-align:center;line-height:20px;}
+a.more{float:right;position:relative;bottom:10px;font-size:15px;}
+table.lizi{width:460px;height:293px;}
+table.lizi tr td {text-align:center;border-top:1px solid #ccf;}
+table.lizi tr td a {color:black;text-decoration:none;}
+table.lizi tr td:hover{background-color:#e6e6f2}
+tr.MaxBottom td{border-bottom:1px solid #ccf;}
+table.lizi tr td a .space{font-size:15px;}
+table.lizi tr td a .price{font-size:14px;color:red;}
+table.lizi tr td a .date{font-size:12px;}
+table.lizi tr td a .count{color:blue;font-size:15px;}
+
+
+/*国内酒店*/
+div.guoneijiudian{width:950px;height:345px;}
+div.hotel_kinds{width:940px;height:30px;}
+div.hotel_kinds li {float:left;width:70px;border:1px solid #00aeae;height:20px;text-align:center;line-height:20px;}
+li.margin_b{margin-left:15px;}
+div.hotel_kinds li a {font-size:15px;color:#00aeae;display:block;text-decoration:none;}
+div.hotel_kinds li a:hover {background-color:#00aeae;color:white;}
+div.select_kinds {width:940px;height:40px;}
+div.select_kinds ul{padding:0px;margin:0px;width:940px;height:40px}
+div.select_kinds ul li {float:left;width:140px;height:40px;margin-left:10px;text-align:center;color:#00aeae;
+	line-height:35px;font-size:18px;}
+/*隐藏的酒店*/
+table.hotels {width:940px;height:260px;}
+table.hotels tr td a {text-decoration:none;color:black;}
+table.hotels tr td img {width:182px;height:216px;}
+table.hotels tr td img:hover{opacity:0.7}
+table.hotels tr td span.jiudian_name{font-size:12px;float:left;margin-top:10px;margin-left:5px;}
+table.hotels tr td span.jiudian_price{font-size:15px;float:right;color:red;margin-top:10px;margin-right:5px;}
+#guangzhou,#shanghai,#shenzhen{display:none;}
+ 
+/*国内旅游*/
+div.guoneilvyou{width:940px;height:475px;margin:10px auto;background-color:white;border:1px solid #d0d0d0;padding:5px;}
+div.guonei_left{width:300px;height:410px;float:left;}
+div.guonei_head{width:300px;height:30px;}
+div.guonei_head li {width:70px;height:20px;float:left;}
+div.guonei_head li a {display:block;text-decoration:none;text-align:center;line-height:20px;
+	border:1px solid #66b3ff;font-size:15px;color:#66b3ff;}
+div.guonei_head li a:hover,div.guonei_head_right li a:hover{background-color:#66b3ff;color:white;}
+table.guonei_citys{width:300px;height:380px;}
+
+td.demo {width:148px;height:160px;border-left:1px solid #66b3ff;}
+td.demo div li{width:42px;height:32px;float:left;margin-left:5px;}
+td.demo div span{font-size:18px;color:#66b3ff;}
+td.demo div li a {color:black;font-size:15px;text-decoration:none;}
+td.demo div li a:hover{color:#66b3ff;}
+
+div.guonei_right{width:620px;height:410px;float:left;position:relative;left:20px;}
+div.guonei_head_right{width:620px;height:30px;border-bottom:1px solid #66b3ff;}
+div.guonei_head_right li {width:70px;height:20px;float:left;}
+div.guonei_head_right li a{display:block;text-decoration:none;text-align:center;line-height:20px;
+	border:1px solid #66b3ff;font-size:15px;color:#66b3ff;}
+div.guonei_citys{width:620px;height:380px;}
+div.guonei_imgs {width:628px;height:125px;margin:10px 0px 0px 0px;}
+div.guonei_imgs li {width:190px;height:125px;float:left;}
+div.guonei_imgs li img:hover{opacity:0.6}
+div.guonei_jieshao{width:628px;height:50px;}
+div.guonei_jieshao li {width:190px;height:44px;float:left;font-size:15px;
+		padding:3px;}
+div.guonei_jieshao li a {text-decoration:none;color:black;}
+div.guonei_jieshao li a:hover{color:red;}
+div.guonei_jieshao li span{float:right;color:red;font-size:15px;}
+li.margin_left_15px{margin-left:17px;}
+

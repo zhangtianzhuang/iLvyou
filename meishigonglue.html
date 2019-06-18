@@ -1,0 +1,496 @@
+<html>
+<head>
+<title>美食攻略</title>
+<link type="text/css" href="css/navier.css" rel="stylesheet"/>
+<style>
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;}
+div.navier ul {height:40px;}
+div.navier li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px}
+div.navier li a:hover{background-color:#c6a300;color:#fff;}
+li.cl{margin-left:12px;}
+
+div.headerImg{width:950px;height:315px;margin:20px auto;background-image:url(images/meishi_headImage01.png);
+				background-repeat:round;}
+
+div.meishi_main{width:950px;height:1000px;margin:15px auto 0px auto;}
+span.meishi_main_title{font-size:22px;color:#c6a300;margin-left:10px;line-height:40px;}
+
+div.main_bodyer{width:700px;height:auto;border:1px solid #fff;float:left;}
+
+div.meishis,div.meishi ul{width:700px;height:240px;margin-bottom:15px;}
+div.meishis li{float:left}
+div.meishis ul li a{text-decoration:none;color:blue;}
+li.mei01{width:398px;height:240px;font-size:12px;}
+li.mei01 img {width:398px;height:240px;cursor:pointer;}
+li.mei01 img:hover{width:386px;height:228px;border:6px solid #c6a300;}
+li.mei02{width:278px;height:218px;border:1px solid #c6a300;padding:10px;}
+li.mei02 li p{text-indent:2em;}
+
+div.cepian{width:240px;height:2280px;float:right}
+div.others{width:240p;height:238px;;margin-bottom:15px;border:1px solid #c6a300;}
+div.sanjiao{width:10px;height:238px;float:left;}
+div.others_main{width:228px;height:228px;background-color:#ccf;padding:5px}
+
+div.others_main table{width:220px;height:70px;position:relative;top:10px}
+div.others_main table tr td{text-align:center;background-color:#fff;width:100px;height:35px;}
+div.others_main table tr td a{font-size:13px;text-decoration:none;color:#c6a300;display:block;line-height:35px}
+
+div.others_main table tr td a:hover{font-size:15px;color:#fff;background-color:#c6a300;text-decoration:underline}
+span.provinces{color:#c6a300;font-size:14px}
+</style>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/meishi_headImage01.png)","url(images/meishi_headImage02.png)",
+							"url(images/meishi_headImage03.png)");
+		document.getElementById("headerImg").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==3){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+</head>
+<body>
+	<!--头部-->
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:#c6a300;">
+	</div>
+
+	<div class="headerImg" id="headerImg">
+	</div>
+	
+	<div class="meishi_main">
+		<div>
+			<span class="meishi_main_title">热门推荐</span>
+		</div>
+
+		<div class="main_bodyer">
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi01.png"/><li>	<!--400*240-->
+					<li class="mei02"><br/><h4>广东：虾饺</h4><br/>
+					<p>
+　　虾饺是广东省的汉族传统小吃，起源于广州郊外靠近河涌集市的茶居。那些地方盛产鱼虾，茶居师傅再配上猪肉、竹笋，制成肉馅。当时虾饺的外皮选用粘(大)米粉，皮质较厚，但由于鲜虾味美，很快流传开来。<sub><a href="#">详情>></a></sub>
+					</p>
+				</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi02.png"/><li>
+
+					<li class="mei02"><br/><h4>湖北：热干面</h4><br/>
+					<p>
+　　热干面是湖北省武汉市的汉族特色小吃，在湖北很多地方都十分受欢迎。随着湖北人在其他省市地人口增多，武汉热干面也在许多地方都能见到，是诸多人喜欢的面食之一。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi03.png"/><li>
+
+					<li class="mei02"><br/><h4>湖南：口味虾</h4><br/>
+					<p>
+　　口味虾又叫长沙口味虾、麻辣小龙虾、香辣小龙虾等，是湖南省著名的汉族小吃，以小龙虾制成，口味辣鲜香，色泽红亮，质地滑嫩，滋味香辣。20世纪末开始传遍全国，成为人们夏夜街边啤酒摊的经典小吃。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi04.png"/><li>
+
+					<li class="mei02"><br/><h4>上海：南翔小笼包</h4><br/>
+					<p>
+　　南翔小笼馒头，是上海嘉定区南翔镇的汉族传统名小吃。已有100多年历史。该品素以皮薄、馅多、卤重、味鲜而闻名，是深受国内外顾客喜爱的风味小吃之一 。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi05.png"/><li>
+
+					<li class="mei02"><br/><h4>四川：三大炮</h4><br/>
+					<p>
+　　三大炮是著名的四川地区汉族特色小吃，主要由糯米制成，分为“铁炮”，“火炮”，“枪炮”，故名总称“三大炮”。吃时配以“老鹰茶”，别有风味。三大炮有香甜可口、不腻不粘又化渣的特点，且价廉物美。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi06.png"/><li>
+
+					<li class="mei02"><br/><h4>吉林：长春朝鲜冷面</h4><br/>
+					<p>
+　　延边朝鲜族喜吃冷面。冷面现今在国内很有名气，冷面的主料为白面，荞麦面和淀粉。做冷面时，先把和好的面用专用机械压入锅中，煮熟后捞出，用冷水冷却。后加牛肉汤或鸡肉汤，配以泡菜，辣椒，牛肉片，鸡肉丸子，苹果片，鸡蛋等佐料，即可食用。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi07.png"/><li>
+
+					<li class="mei02"><br/><h4>云南：过桥米线</h4><br/>
+					<p>
+　　过桥米线是云南滇南地区特有的汉族小吃，属滇菜系。过桥米线起源于蒙自地区。过桥米线汤是用大骨、老母鸡、云南宣威火腿经长时间熬煮而成的。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi08.png"/><li>
+
+					<li class="mei02"><br/><h4>山西：刀削面</h4><br/>
+					<p>
+　　刀削面，是山西的汉族传统面食，为“中国十大面条”之一 ，流行于北方。操作过程：将面粉和成团块状，左手举面团，右手拿弧形刀，将面一片一片地削到开水锅内，煮熟后捞出，加入臊子、调料食用，以山西大同刀削面最为著名。 <sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="meishis">
+				<ul>
+					<li class="mei01"><img src="images/meishi09.png"/><li>
+
+					<li class="mei02"><br/><h4>宁夏：清蒸羊羔肉</h4><br/>
+					<p>
+　　宁夏羊羔肉细嫩鲜美，没有膻味。羊羔肉最好选用胸叉、上脊骨部位，剁成长方形条，用清凉水洗净，摆在碗内，放上生姜、大葱、大蒜;再放上几粒生花椒，上笼蒸30分钟左右;然后扣至汤盘内上桌，配以醋、蒜汁、盐等调料佐食。<sub><a href="#">详情>></a></sub>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="cepian">
+			<!--1-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+				<div class="others_main">
+					<span class="provinces">广东美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">燕奶金丝球</a></td>
+							<td><a href="#">荷香豉蒜肉</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">佛宾清香鸡</a></td>
+							<td><a href="#">金菊蟠龙鳝</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">公明烧鹅</a></td>
+							<td><a href="#">松岗腊鸭</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">南澳鲍鱼</a></td>
+							<td><a href="#">西丽芒果</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">沙井鲜蚝</a></td>
+							<td><a href="#">光明乳鸽</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--2-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">湖北美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">鸡泥桃花鱼</a></td>
+							<td><a href="#">清蒸武昌鱼</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">黄州东坡肉</a></td>
+							<td><a href="#">四季美汤包</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">三鲜豆皮</a></td>
+							<td><a href="#">已成打下</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">热干面</a></td>
+							<td><a href="#">八卦汤</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">包面</a></td>
+							<td><a href="#">清汤</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--3-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">湖南美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">口味虾</a></td>
+							<td><a href="#">芷江鸭</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">蝴蝶过海</a></td>
+							<td><a href="#">鱼头豆腐</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">洞庭银鱼</a></td>
+							<td><a href="#">永州喝螺</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">算鱼肉</a></td>
+							<td><a href="#">血豆腐</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">社饭</a></td>
+							<td><a href="#">合渣</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--4-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">上海美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">蟹壳黄</a></td>
+							<td><a href="#">高桥松饼</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">南翔小笼包</a></td>
+							<td><a href="#">排骨年糕</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">锅贴</a></td>
+							<td><a href="#">烘山芋</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">枫泾丁蹄</a></td>
+							<td><a href="#">松鼠黄鱼</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">响油鳝糊</a></td>
+							<td><a href="#">狮子头</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--5-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">四川美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">三大炮</a></td>
+							<td><a href="#">三合泥</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">东坡墨鱼</a></td>
+							<td><a href="#">清蒸江团</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">峨眉老腊肉</a></td>
+							<td><a href="#">峨眉豆花</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">卤鸭</a></td>
+							<td><a href="#">怪味鸡</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">锅巴肉片</a></td>
+							<td><a href="#">酸辣豆花</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--6-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">吉林美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">富春园火锅</a></td>
+							<td><a href="#">白肉血肠</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">三套碗</a></td>
+							<td><a href="#">人参汤</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">清蒸白鱼</a></td>
+							<td><a href="#">烧鹿尾</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">黄米打糕</a></td>
+							<td><a href="#">朝鲜族冷面</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">朝鲜烤牛肉</a></td>
+							<td><a href="#">人参汽锅鸡</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--7-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">过桥米线</a></td>
+							<td><a href="#">凉拌米线</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">黄焖鸡</a></td>
+							<td><a href="#">陆良板鸭</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">官兵饭</a></td>
+							<td><a href="#">五花米饭</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">沾益辣子鸡</a></td>
+							<td><a href="#">易门豆豉</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">土豆粑粑</a></td>
+							<td><a href="#">黄豆面</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--8-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">山西美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">阳城肉罐肉</a></td>
+							<td><a href="#">豆腐脑</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">羊杂碎汤</a></td>
+							<td><a href="#">猫耳朵</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">太谷饼</a></td>
+							<td><a href="#">应州牛腰</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">荤汤素饺</a></td>
+							<td><a href="#">三合面</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">刀削面</a></td>
+							<td><a href="#">烧三鲜</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--9-->
+			<div class="others">
+				<div class="sanjiao">
+					<img src=""/>
+				</div>
+
+				<div class="others_main">
+					<span class="provinces">宁夏美食</span><br/>
+					<table>
+						<tr>
+							<td><a href="#">香酥鸡</a></td>
+							<td><a href="#">清蒸羊羔肉</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">白水鸡</a></td>
+							<td><a href="#">手抓羊肉</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">燕面揉揉</a></td>
+							<td><a href="#">臊子面</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">羊肉枸杞芽</a></td>
+							<td><a href="#">丁香肘子</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">沙湖大头鱼</a></td>
+							<td><a href="#">扒驼掌</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--结束-->
+		</div>
+	</div>
+</body>
+</html>

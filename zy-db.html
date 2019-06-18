@@ -1,0 +1,604 @@
+﻿<html>
+<head> 
+<title>迪拜</title>
+<link type="text/css" href="css/navier.css" rel="stylesheet"/>
+<style>
+body{background-image:url(images/zy-beijing.jpg);
+     background-repeat:no-repeat;
+     background-attachment:fixed;
+     background-size:cover;
+     }
+div{border:1px}
+div img:hover{opacity:0.7;}
+div a:hover{color:orange;}
+*{text-decoration:none;font-family:微软雅黑;}
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;background-color:white;}
+div.navier ul {padding:0px;margin:0px;height:40px;list-style-type:none;}
+div.navier li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier li a {text-align:center;font-size:16px;display:block;color:black;line-height:30px}
+div.navier li a:hover{background-color:orange;color:#fff;}
+li.cl{margin-left:12px;}
+.thebody{width:950px;height:390px;;margin:0px auto;background-color:white;border:1px solid #bebebe;}
+.place{font-size:12px;color:#6c6c6c;margin:5px;}
+.place a,span{color:#6c6c6c;text-decoration:none;}
+.place a:hover{color:red;}
+.tq{margin-left:10px;}
+.tq img{width:18px;height:18px;margin-top:2px;}
+.tq span{position:relative;bottom:3px;}
+.dt{float:right;width:65px;height:25px;border:1px solid #bebebe;border-radius:6px;background-color:#f0f0f0;text-align:center;position:relative;top:18px;}
+.dt a{font-size:12px;color:#6c6c6c;position:relative;top:4px;}
+.dh{width:950px;}
+.dh a{color:black;display:block;padding:5px 5px 5px 0.5em;position:relative;bottom:5px;}
+.dh a:hover{background-color:orange;color:white;}
+.abody{width:950px;margin:0px auto;margin-top:15px;height:400px;}
+.bbody{width:950px;margin:0px auto;margin-top:15px;height:476px;}
+.cbody{width:950px;margin:0px auto;margin-top:15px;height:1050px;}
+.left{width:200px;height:207px;float:left;background-color:white;border:1px solid #bebebe;}
+#right{width:730px;height:400px;float:right;border:1px solid #bebebe;background-image:url(images/zy-db01.jpg);}
+.right2{width:730px;height:476px;float:right;background-color:white;border:1px solid #bebebe;}
+.left1{width:200px;height:181px;float:left;margin-top:10px;background-color:white;border:1px solid #bebebe;}
+.left2{width:200px;height:476px;float:left;background-color:white;border:1px solid #bebebe;}
+.title{font-size:16px;height:40px;}
+.one{width:228px;height:200px;float:left;margin-left:10px;margin-top:10px;border:1px solid #e0e0e0;}
+.one:hover,.two:hover{border:1px solid orange;}
+.left3{width:200px;height:150px;float:left;background-color:white;border:1px solid #bebebe;}
+.right3{width:730px;height:150px;float:right;background-color:white;border:1px solid #bebebe;}
+.right4{width:730px;height:305px;float:right;margin-top:15px;background-color:white;border:1px solid #bebebe;}
+.right5{width:730px;height:270px;float:right;background-color:white;border:1px solid #bebebe;margin-top:15px;}
+.left4{width:200px;height:300px;float:left;margin-top:15px;background-color:white;border:1px solid #bebebe;}
+.left6{width:200px;height:320px;float:left;margin-top:15px;background-color:white;border:1px solid #bebebe;}
+.left5{width:200px;height:210px;float:left;margin-top:15px;background-color:white;border:1px solid #bebebe;}
+.bj{width:730px;height:50px;background-color:black;opacity:0.7;margin-top:350px;}
+.bj p{color:white;font-size:20px;margin-left:20px;position:relative;top:10px;}
+.zhead{font-size:16px;margin:5px;margin-left:10px}
+.zhead a{float:right;color:orange;font-size:12px;position:relative;top:4px;}
+.yhead{font-size:20px;margin:5px;margin-left:10px}
+.yhead a{float:right;color:orange;font-size:12px;position:relative;top:8px;}
+.bodys a{font-size:12px;color:#6c6c6c;}
+.bodys li{margin-left:7px;}
+.post{font-size:12px;width:200px;margin-left:10px;color:#6c6c6c;}
+.post input{width:118px;border:1px solid #bebebe;}
+.in input{float:left;width:65px;height:25px;margin-left:20px;position:relative;top:10px;border-radius:6px;background-color:#bebebe;border:1px solid #6c6c6c;}
+.yw{width:180px;height:82px;margin:0px auto;margin-top:6px;}
+.yw img{width:72px;height:78px;}
+.lv a{font-size:12px;color:#6c6c6c;}
+.lv{position:relative;left:2px;float:left;}
+.two{float:left;width:170px;height:254px;margin-left:8px;border:1px solid #e0e0e0;}
+.two img{width:170px;height:200px;}
+.zy1{float:left;width:76px;height:20px;background-color:black;opacity:0.7;color:white;position:relative;right:76px;top:42px;font-size:12px;text-align:center;}
+.name{font-size:16px;margin-left:4px;}
+.js{float:left;font-size:12px;color:#9d9d9d;margin-left:5px;margin-top:3px;}
+.money{font-size:12px;float:right;margin-right:5px;}
+.money span{color:red;font-size:20px;}
+</style>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/zy-db01.jpg)","url(images/zy-db02.jpg)",
+							"url(images/zy-db03.jpg)","url(images/zy-db04.jpg)","url(images/zy-db05.jpg)");
+		document.getElementById("right").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==5){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+</head>
+<body>
+	<!--头部-->
+	<div style="width:100%;height:120px;background-color:white;">
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:orange;">
+	</div>
+	<div class="thebody">
+		<div><a href="#"><img src="images/zy-db1.jpg" width=950px height=250px></a></div>
+		<div class="place">
+			<a href="#">&nbsp首页</a><span>></span><a href="#">城市风光</a><span>></span><a href="#">迪拜</a>
+		</div>
+		<div style="font-size:30px;margin-left:10px;float:left;">迪拜<span style="color:#9d9d9d;font-size:16px;">&nbsp Dubai</span>
+		</div>
+		<div style="width:3px;height:35px;background-color:#bebebe;float:left;margin-top:5px;margin-left:5px;margin-right:5px;">
+		</div>
+		<div style="float:left;width:800px;height:25px;font-size:12px;color:#6c6c6c;margin-top:20px;">
+			Live in the clouds, sea here, you are asleep, you belong to the dreamer, exclusive luxury and romance.
+			<a href="#" style="color:orange;text-decoration:none;">【详细介绍】</a>
+			<div class="dt"><a href="#">查看地图</a></div>
+		</div>
+		<div class="tq">
+			<img src="images/zy-dbtq.jpg"><span>21℃~28℃</span>
+		</div>
+		<div style="width:950px;height:2px;background-color:#bebebe;margin-top:3px;margin-bottom:5px;"></div>
+		<table class="dh">
+			<tr>
+				<td><a href="#">&nbsp&nbsp&nbsp返回上级</a></td>	
+				<td><a href="#">&nbsp&nbsp&nbsp热门景点</a></td>	
+				<td><a href="#">&nbsp&nbsp&nbsp热门路线</a></td>
+				<td><a href="#">&nbsp&nbsp&nbsp游赏必玩</a></td>
+				<td><a href="#">&nbsp&nbsp&nbsp购物广场</a></td>	
+				<td><a href="#">&nbsp&nbsp&nbsp美食订购</a></td>	
+				<td><a href="#">&nbsp&nbsp&nbsp出行游记</a></td>
+				<td><a href="#">&nbsp&nbsp&nbsp相关查询</a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="abody">
+		<div class="left">
+			<div class="zhead">
+				热销活动<a href="#">更多>></a>
+			</div>
+			<div class="bodys">
+				<ul>
+					<li><a href="#"><跟团游>迪拜7日游限时4折抢购</a></li>
+					<li><a href="#"><抢购>出境迪拜机票5折起优惠</a></li>
+					<li><a href="#"><抢购>暑期夏令营提前预约送豪礼</a></li>
+					<li><a href="#"><自驾游>出境指南含旅游指导等</a></li>
+					<li><a href="#"><活动>留下你的旅游游记赢豪礼</a></li>
+					<li><a href="#"><跟团游>黄金周迪拜7日游抢购</a></li>
+					<li><a href="#"><活动>迪拜机票网上预订限时折扣</a></li>
+					<li><a href="#"><自驾游>迪拜酒店介绍网上预订</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="right">
+			<div class="bj">
+				<p>迪拜影册&nbsp By Tourists</p>
+				<a href="#" style="font-size:14px;float:right;color:white;margin-right:3px;">查看更多>></a>
+			</div>
+		</div>
+		<div class="left1">
+			<div class="zhead">
+				机票预订
+			</div>
+				<form>
+					<table class="post">
+						<tr>
+							<td>出发地</td>
+							<td><input type="text" placeholder="郑州" id="city"/></td>
+						</tr>
+						<tr>
+							<td>目的地</td>
+							<td><input type="text" placeholder="迪拜" id="city" /></td>
+						</tr>
+						<tr>
+							<td>出游时间</td>
+							<td><input type="date"/></td>
+						</tr>
+						<tr>
+							<td>返程时间</td>
+							<td><input type="date" /></td>
+						</tr>
+					</table>
+					<div class="in">
+						<ul>
+							<li><input class="tijiao" type="submit" value="提交"/></li>
+							<li><input class="tijiao" type="reset" value="重填"/></li>
+						</ul>
+					</div>
+				</form>
+		</div>
+	</div>
+	<div class="bbody">
+		<div class="left2">
+			<div class="zhead">
+				游玩推荐<a href="#">更多>></a>
+			</div>
+			<div class="yw">
+				<div style="width:76px;height:82px;float:left;">
+				<a href="#"><img src="images/zy-dbyw1.jpg"></a>
+				</div>
+				<div style="width:100px;height:22px;float:left;">
+					<span style="font-size:13px;color:black;margin:5px">朱美拉海滩</span>
+					<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;">
+					Jumeira Public Beach的沙质柔软细白，碧海蓝天…
+					</div>
+				</div>
+			</div>
+			<div class="yw">
+				<div style="width:76px;height:82px;float:left;">
+				<a href="#"><img src="images/zy-dbyw2.jpg"></a>
+				</div>
+				<div style="width:100px;height:22px;float:left;">
+					<span style="font-size:13px;color:black;margin:5px">迪拜博物馆</span>
+					<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;">
+					迪拜博物馆是位于阿拉伯联合酋长国迪拜的一座大型…
+					</div>
+				</div>
+			</div>
+			<div class="yw">
+				<div style="width:76px;height:82px;float:left;">
+				<a href="#"><img src="images/zy-dbyw3.jpg"></a>
+				</div>
+				<div style="width:100px;height:22px;float:left;">
+					<span style="font-size:13px;color:black;margin:5px">音乐喷泉</span>
+					<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;">
+					迪拜音乐喷泉是世界最大的喷泉，也是最壮观的喷泉…
+					</div>
+				</div>
+			</div>
+			<div class="yw">
+				<div style="width:76px;height:82px;float:left;">
+				<a href="#"><img src="images/zy-dbyw4.jpg"></a>
+				</div>
+				<div style="width:100px;height:22px;float:left;">
+					<span style="font-size:13px;color:black;margin:5px">迪拜动物园</span>
+					<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;">
+					迪拜动物园于20世纪六十年代末建成，是阿拉伯半…
+					</div>
+				</div>
+			</div>
+			<div class="yw">
+				<div style="width:76px;height:82px;float:left;">
+				<a href="#"><img src="images/zy-dbyw5.jpg"></a>
+				</div>
+				<div style="width:100px;height:22px;float:left;">
+					<span style="font-size:13px;color:black;margin:5px">迪拜水族馆</span>
+					<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;">
+					迪拜购物中心水族馆位于位于全球最高塔“哈利法塔…
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right2">
+			<div class="yhead">
+				热门景点<a href="#">更多>></a>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgj1.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					哈利法塔<span style="font-size:12px;color:#9d9d9d;">(Khalīfa tower)</span>
+				</div>
+				<div style="float:right;font-size:12px;color:orange;margin:5px;">
+					<span style="font-size:16px;color:orange;">❤</span>6.7万
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					哈利法塔原名迪拜塔，又称迪拜大厦或…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgj2.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					帆船酒店<span style="font-size:12px;color:#9d9d9d;">(Burj Al Arab)</span>
+				</div>
+				<div style="float:right;font-size:12px;color:orange;margin:5px;">
+					<span style="font-size:16px;color:orange;">❤</span>5.5万
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					阿拉伯塔酒店因外形酷似船帆，又称迪…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgj3.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					棕榈岛<span style="font-size:12px;color:#9d9d9d;">(Isle of Palms)</span>
+				</div>
+				<div style="float:right;font-size:12px;color:orange;margin:5px;">
+					<span style="font-size:16px;color:orange;">❤</span>5.0万
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					棕榈岛是由三个“棕榈岛”工程，即朱…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgj4.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					失落的空间<span style="font-size:12px;color:#9d9d9d;">(L C)</span>
+				</div>
+				<div style="float:right;font-size:12px;color:orange;margin:5px;">
+					<span style="font-size:16px;color:orange;">❤</span>4.3万
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					迪拜棕榈岛六星级酒店亚特兰蒂斯酒店…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgj5.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					迪拜河<span style="font-size:12px;color:#9d9d9d;">(Khor Dubai)</span>
+				</div>
+				<div style="float:right;font-size:12px;color:orange;margin:5px;">
+					<span style="font-size:16px;color:orange;">❤</span>3.1万
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					迪拜河仍然是感受迪拜脉搏的地方，迪…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgj6.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					奇迹花园<span style="font-size:12px;color:#9d9d9d;">(miracle garden)</span>
+				</div>
+				<div style="float:right;font-size:12px;color:orange;margin:5px;">
+					<span style="font-size:16px;color:orange;">❤</span>2.9万
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					迪拜奇迹花园(miracle garden)是迪拜…
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cbody">
+		<div class="left3">	
+			<div class="zhead">
+				旅游助手<a href="#">更多>></a>
+			</div>
+			<div style="float:left;margin:5px;margin-left:10px;">
+				<a href="#"><img src="images/zy-db2.jpg" width=76px height=105px></a>
+			</div>
+			<div class="lv">
+				<ul>
+					<li><a href="#">·&nbsp迪拜实时天气查询</a></li>
+					<li><a href="#">·&nbsp出境签证办理</a></li>
+					<li><a href="#">·&nbsp迪拜WiFi助手</a></li>
+					<li><a href="#">·&nbsp迪拜导游聘请</a></li>
+					<li><a href="#">·&nbsp景点介绍及门票</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right3">
+			<a href="#"><img src="images/zy-dbgg1.png"></a>
+		</div>
+		<div class="left4">
+			<a href="#"><img src="images/zy-dbgg2.jpg"></a>
+		</div>
+		<div class="right5">
+			<div class="yhead">
+				美食天堂<span style="font-size:12px;color:#7b7b7b;">&nbsp(迪拜的食物融合了黎巴嫩、伊朗、摩洛哥等各国特色，在此您可以品尝独特的阿拉伯美食。)</span><a href="#">更多>></a>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbms1.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					Al Mahara海底餐厅
+				</div>
+				<div style="float:right;font-size:12px;color:white;margin:5px;width:45px;heitgh:25px;text-align:center;position:relative;top:5px;background-color:orange;border-radius:10px;">
+					第1名
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					位于帆船酒店最底层的海底餐厅，用…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbms2.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					Ossiano海底餐厅
+				</div>
+				<div style="float:right;font-size:12px;color:white;margin:5px;width:45px;heitgh:25px;text-align:center;position:relative;top:5px;background-color:orange;border-radius:10px;">
+					第2名
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					餐厅坐落于棕榈岛的亚特兰蒂斯酒店内…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbms3.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					Skyview Bar
+				</div>
+				<div style="float:right;font-size:12px;color:white;margin:5px;width:45px;heitgh:25px;text-align:center;position:relative;top:5px;background-color:orange;border-radius:10px;">
+					第3名
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					乘坐高速电梯到达帆船酒店200米高的…
+				</div>
+			</div>
+		</div>
+		<div class="right5">
+			<div class="yhead">
+				购物中心<span style="font-size:12px;color:#7b7b7b;">&nbsp(迪拜是中东著名的购物天堂，这里有舒适的购物环境，繁多的世界品牌，且全部是免税的。)</span><a href="#">更多>></a>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgw3.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					迪拜购物中心
+				</div>
+				<div style="float:right;font-size:12px;color:white;margin:5px;width:45px;heitgh:25px;text-align:center;position:relative;top:5px;background-color:orange;border-radius:10px;">
+					第1名
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					位于全球最高的哈利法塔（Burj Khalifa…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgw2.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					黄金市场
+				</div>
+				<div style="float:right;font-size:12px;color:white;margin:5px;width:45px;heitgh:25px;text-align:center;position:relative;top:5px;background-color:orange;border-radius:10px;">
+					第2名
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					黄金市场位于迪拜老城区，近邻香料市…
+				</div>
+			</div>
+			<div class="one">
+				<div style="width:228px;height:140px;">
+					<a href="#"><img src="images/zy-dbgw1.jpg"></a>
+				</div>
+				<div style="float:left;font-size:16px;margin:5px;">
+					阿联酋购物中心
+				</div>
+				<div style="float:right;font-size:12px;color:white;margin:5px;width:45px;heitgh:25px;text-align:center;position:relative;top:5px;background-color:orange;border-radius:10px;">
+					第3名
+				</div>
+				<div style="font-size:12px;color:#8e8e8e;float:left;margin-left:5px;margin-top:3px;">
+					阿联酋购物中心是在当地市场上银联卡…
+				</div>
+			</div>
+		</div>
+		<div class="left5">
+			<div class="zhead">
+				旅游指南<a href="#">更多>></a>
+			</div>
+			<div class="bodys">
+				<ul>
+					<li><a href="#"><1>迪拜盒子--将迪拜装进口袋</a></li>
+					<li><a href="#"><2>迪拜旅游最佳旅游路线</a></li>
+					<li><a href="#"><3>迪拜自驾游旅游指南</a></li>
+					<li><a href="#"><4>迪拜旅游疑难解答入口</a></li>
+					<li><a href="#"><5>旅游规划一点通</a></li>
+					<li><a href="#"><6>迪拜吃住行详细指南</a></li>
+					<li><a href="#"><7>自驾游导游聘请中心</a></li>
+					<li><a href="#"><8>迪拜口袋攻略--玩转迪拜</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="left6">
+			<div class="zhead">
+				周边旅游<a href="#">更多>></a>
+			</div>
+			<div style="width:200px;height:70px;">
+				<div style="width:76px;height:62px;float:left;margin-left:10px;">
+					<a href="#"><img src="images/zy-dbzb1.jpg" width=76px height=62px></a>
+				</div>
+				<div class="zy1">土耳其</div>
+				<div style="width:100px;height:22px;float:left;">
+						<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;position:relative;bottom:20px;">
+						土耳其是一个横跨欧亚大陆的伊斯兰教国家，被称为…
+						</div>
+				</div>
+			</div>
+			<div style="width:200px;height:70px;">
+				<div style="width:76px;height:62px;float:left;margin-left:10px;">
+					<a href="#"><img src="images/zy-dbzb2.jpg" width=76px height=62px></a>
+				</div>
+				<div class="zy1">埃及</div>
+				<div style="width:100px;height:22px;float:left;">
+						<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;position:relative;bottom:20px;">
+						埃及位于地中海和红海中间，非洲东北部，领土包括…
+						</div>
+				</div>
+			</div>
+			<div style="width:200px;height:70px;">
+				<div style="width:76px;height:62px;float:left;margin-left:10px;">
+					<a href="#"><img src="images/zy-dbzb3.jpg" width=76px height=62px></a>
+				</div>
+				<div class="zy1">尼尔波</div>
+				<div style="width:100px;height:22px;float:left;">
+						<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;position:relative;bottom:20px;">
+						尼泊尔联邦民主共和国是一个内陆山国，位于喜马…
+						</div>
+				</div>
+			</div>
+			<div style="width:200px;height:70px;">
+				<div style="width:76px;height:62px;float:left;margin-left:10px;">
+					<a href="#"><img src="images/zy-dbzb4.jpg" width=76px height=62px></a>
+				</div>
+				<div class="zy1">印度</div>
+				<div style="width:100px;height:22px;float:left;">
+						<div style="width:100px;height:60px;float:left;font-size:12px;color:#7b7b7b;margin:5px;position:relative;bottom:20px;">
+						印度位于亚洲大陆突出印度洋的南亚次大陆，形状像…
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="right4">
+			<div class="yhead">
+				星级酒店<a href="#">更多>></a>
+			</div>
+			<div class="two">
+				<div>
+					<a href="#"><img src="images/zy-dbjd1.jpg"></a>
+				</div>
+				<div class="name">
+					卓美亚帆船酒店
+				</div>
+				<div class="js">
+					Burj Al Arab
+				</div>
+				<div class="money">
+					￥<span>8688</span>起
+				</div>
+			</div>
+			<div class="two">
+				<div>
+					<a href="#"><img src="images/zy-dbjd2.jpg"></a>
+				</div>
+				<div class="name">
+					唯一棕榈酒店
+				</div>
+				<div class="js">
+					Only The Palm
+				</div>
+				<div class="money">
+					￥<span>3200</span>起
+				</div>
+			</div>
+			<div class="two">
+				<div>
+					<a href="#"><img src="images/zy-dbjd3.jpg"></a>
+				</div>
+				<div class="name">
+					亚特兰蒂斯酒店
+				</div>
+				<div class="js">
+					Atlantis
+				</div>
+				<div class="money">
+					￥<span>2629</span>起
+				</div>
+			</div>
+			<div class="two">
+				<div>
+					<a href="#"><img src="images/zy-dbjd4.jpg"></a>
+				</div>
+				<div class="name">
+					迪拜阿玛尼酒店
+				</div>
+				<div class="js">
+					Armani Hotel
+				</div>
+				<div class="money">
+					￥<span>2280</span>起
+				</div>
+			</div>
+		</div>						
+	</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>特价门票</title>
+<link type="text/css" href="css/navier.css" rel="stylesheet"/>
+<style>
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;}
+div.navier ul {height:40px;}
+div.navier li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;line-height:30px}
+div.navier li a:hover{background-color:#a5a552;color:white;}
+li.cl{margin-left:12px;}
+/*搜索栏*/
+div.searcher{width:950px;height:58px;margin:15px auto;border:1px solid #ccf;background-color:#ccf}
+div.searcher form{width:800px;height:46px;background-color:#ccf;margin-top:7px;float:right}
+input.kuang{width:638px;height:44px;border:2px solid #a5a552;font-size:17px;outline:none;}
+input.but{width:100px;height:44px;border:1px solid #a5a552;font-size:17px;background-color:#a5a552;color:white;
+			cursor:pointer;outline:none;}
+
+div.main1{width:950px;height:340px;margin:15px auto;}
+div.main1_left{width:270px;height:340px;float:left;border-right:1px solid #ccf;
+						   border-top:1px solid #ccf;border-left:1px solid #ccf}
+div.main1_left li{width:250px;height:33px;border-bottom:1px solid #ccf;line-height:33px;
+					padding-left:20px;cursor:pointer}
+div.main1_left li:hover{opacity:0.5;font-size:17px;}
+div.main1_left li img{float:right;position:relative;top:6px;}
+
+div.main1_right{width:660px;height:340px;float:right;background-image:url(images/menpiao_zidong01.png)}
+
+
+div.main2{width:948px;height:auto;margin:20px auto;border-top:2px solid #a5a552}
+div.title{width:938px;height:30px;font-size:18px;border-bottom:2px solid #ccf;margin-left:5px;
+		line-height:30px;color:#a5a552;margin-bottom:10px}
+div.pics{width:948px;height:304px;}
+div.picsA{width:270px;height:304px;float:left;cursor:pointer}
+div.picsB{width:660px;height:304px;float:right;}
+div.pictures{width:660px;height:228px;}
+div.pictures li {width:157.5px;height:228px;float:left;}
+div.pictures li img {width:157.5px;height:228px;cursor:pointer}
+div.pictures li img:hover{position:relative;top:5px;border:2px solid #a5a552}
+li.t{margin-left:10px;}
+div.texts{width:660px;height:76px;}
+div.texts li {width:157.5px;height:60px;float:left;padding-top:16px;cursor:pointer;color:green;}
+div.texts li span {color:red;}
+div.texts li:hover span,div.texts li:hover{color:#a5a552;}
+
+div.pictures li:hover #a{display:block}
+</style>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/menpiao_zidong01.png)","url(images/menpiao_zidong02.png)",
+							"url(images/menpiao_zidong03.png)","url(images/menpiao_zidong04.png)");
+		document.getElementById("zidong").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==4){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+</head>
+<body>	
+	<!--头部-->
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:#a5a552;">
+	</div>
+
+	<div class="searcher">
+		<form>
+			<input type="text" class="kuang"/><input type="button" value="搜索" class="but"/>
+		</form>
+	</div>
+
+	<div class="main1">
+		<div class="main1_left">
+			<ul>
+				<li><b>>>热门推荐</b><img src="images/daohang_logo_right.png"/></li>
+				<li>1&nbsp;故宫博物馆<img src="images/daohang_logo_right.png"/></li>
+				<li>2&nbsp;峨眉山景区<img src="images/daohang_logo_right.png"/></li>
+
+				<li>3&nbsp;鼓浪屿<img src="images/daohang_logo_right.png"/></li>
+				<li>4&nbsp;黄山风景区<img src="images/daohang_logo_right.png"/></li>
+				<li>5&nbsp;八达岭长城<img src="images/daohang_logo_right.png"/></li>
+
+				<li>6&nbsp;天津海昌极地海洋世界<img src="images/daohang_logo_right.png"/></li>
+				<li>7&nbsp;中山陵<img src="images/daohang_logo_right.png"/></li>
+				<li>8&nbsp;长隆野生动物世界<img src="images/daohang_logo_right.png"/></li>
+
+				<li>9&nbsp;又见平遥<img src="images/daohang_logo_right.png"/></li>
+
+			</ul>
+		</div>
+
+		<div class="main1_right" id="zidong">
+			
+		</div>
+	</div>
+<!--精选门票-->
+	<div class="main2">
+		<div class="title">
+			精选门票
+		</div>
+	<!--图片-->
+		<div class="pics">
+			<div class="picsA"><img src="images/menpiao_lufugong.png"/></div><!--270*304-->
+			<div class="picsB">
+				<div class="pictures">
+					<ul>
+						<li><img src="images/menpiao01.png"/><div id="a"></div></li>		<!--157.5*228-->
+						<li class="t"><img src="images/menpiao02.png"/></li>
+						<li class="t"><img src="images/menpiao03.png"/></li>
+						<li class="t"><img src="images/menpiao04.png"/></li>
+					</ul>
+				</div>
+
+				<div class="texts">
+					<ul>
+						<li>埃菲尔铁塔<br/><span>￥95起</span></li>
+						<li class="t">杭州西湖<br/><span>￥7起</span></li>
+						<li class="t">八达岭<br/><span>￥42起</span></li>
+						<li class="t">黄山<br/><span>￥84起</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	<!--实时抢购-->
+	<div class="main2">
+		<div class="title">
+			实时抢购
+		</div>
+	<!--图片-->
+		<div class="pics">
+			<div class="picsA"><img src="images/menpiao09.png"/></div>
+			<div class="picsB">
+				<div class="pictures">
+					<ul>
+						<li><img src="images/menpiao05.png"/></li>
+						<li class="t"><img src="images/menpiao06.png"/></li>
+						<li class="t"><img src="images/menpiao07.png"/></li>
+						<li class="t"><img src="images/menpiao08.png"/></li>
+					</ul>
+				</div>
+
+				<div class="texts">
+					<ul>
+						<li>嵩山<br/><span>￥100元起</span></li>
+						<li class="t">鸡公山<br/><span>￥68元起</span></li>
+						<li class="t">五台山<br/><span>￥1元起</span></li>
+						<li class="t">野三峡<br/><span>￥1元起</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<html>
+<head> 
+<title>机票预订</title>
+<link type="text/css" href="css/navier.css" rel="stylesheet"/>
+
+<style>
+*{margin:0px;padding:0px;font-family:微软雅黑;}
+li{list-style-type:none}
+/*头部*/
+div.header{height:80px;width:950px;margin:0px auto;}
+div.header li img{float:left;width:237.5px;height:80px;}
+/*导航栏*/
+div.navier{height:40px;width:950px;margin:0px auto;}
+div.navier ul {padding:0px;margin:0px;height:40px;list-style-type:none;}
+div.navier li{width:108px;height:30px;float:left;margin-top:10px;}
+div.navier li a {text-align:center;text-decoration:none;font-size:16px;display:block;color:black;font-family:微软雅黑;line-height:30px}
+div.navier li a:hover{background-color:#ae57a4;}
+li.cl{margin-left:12px;}
+.abody{margin:0px auto;width:950px;height:1035px;margin-top:15px;}
+.left{width:250px;height:280px;border:4px solid #ae57a4;border-top:12px solid #ae57a4;padding:20px;float:left;}
+.left table input{width:140px;height:30px;border:1px solid #ae57a4;position:relative;right:19px;}
+.tijiao{margin-top:15px;}
+#banner{width:635px;float:right;height:335px;border:1px solid white;background-image:url(images/zy-jpgg1.jpg);}
+.jp{width:950px;height:460px;float:left;}
+.gd{float:right;margin-right:3px;margin-top:15px;}
+.gd a{text-decoration:none;font-size:12px;color:#ae57a4;}
+.gd a:hover{color:#9d9d9d;}
+.dh{font-size:16px;margin:5px;color:#ae57a4;float:left;position:relative;top:5px;}
+.mid{width:296px;height:300px;float:left;}
+.right{width:635px;height:300px;float:right;}
+.search{width:200px;height:30px;margin-left:20px;margin-top:10px;border:1px solid #ae57a4;float:left;}
+.sousuo{width:50px;height:32px;color:white;background-color:#ae57a4;border:1px solid #ae57a4;float:left;margin-top:10px;}
+.tools li{float:left;height:70px;width:69px;border:1px solid #ae57a4;margin-left:2px;margin-top:5px;background-color:#ae57a4;border-radius:6px;}
+.tools a{color:white;text-decoration:none;margin:2px;position:relative;top:23px;}
+.tools li:hover{background-color:#bebebe;}
+.gg{width:296px;height:180px;float:left;margin-top:5px;}
+.rx{width:155px;height:130px;float:left;background-color:#f0f0f0;position:relative;bottom:4px;}
+.dd{text-align:center;font-size:20px;margin-top:10px;margin-bottom:10px;}
+.rq{font-size:14px;color:#6c6c6c;margin-left:10px;margin-bottom:10px;}
+.money{font-size:25px;color:red;text-align:right;margin-right:10px;}
+.money span{font-size:14px;color:#6c6c6c;}
+.zy{width:155px;height:250px;float:left;position:relative;top:10px;margin-left:3px;}
+.zy:hover{border-bottom:2px solid #ae57a4;}
+.bj{width:950px;height:418px;background-color:#f0f0f0;float:left;}
+.text{width:150.5px;height:130px;float:left;margin-left:5px;background-color:white;margin-top:5px;border:1px solid white;}
+.text:hover{border:1px solid red;}
+.atext{font-size:20px;margin-left:10px;margin-top:12px;}
+.btext{margin-top:18px;color:#6c6c6c;font-size:14px;margin-left:10px;margin-bottom:10px;}
+.qg{width:30px;height:18px;background-color:orange;float:right;font-size:12px;text-align:center;color:white;position:relative;bottom:20px;}
+.ground{width:950px;height:260px;float:left;background-color:#f0f0f0;}
+.ground img{margin-top:5px;margin-left:5.5px;border:1px solid white;float:left;}
+.ground img:hover{border:1px solid red;}
+</style>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/zy-jpgg1.jpg)","url(images/zy-jpgg2.jpg)",
+							"url(images/zy-jpgg3.jpg)");
+		document.getElementById("banner").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==3){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+</head>
+<body>
+	<!--头部-->
+	<div class="header">
+		<ul>
+			<li><a href="#"><img src="images/lvyoudaohang_headerImg.png" /></a></li>
+			<li><a href="#"><img src="images/zy-head1.gif" /></a></li>
+			<li><a href="#"><img src="images/zy-head2.jpg" /></a></li>
+			<li><a href="#"><img src="images/zy-head3.jpg" /></a></li>
+		</ul>
+	</div>
+
+	<!--导航-->
+	<div class="navier">
+				<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cl"><a href="ztz_lvyoudaohang.html">旅游指南</a></li>
+				<li class="cl"><a href="tejiamenpiao.html">特价门票</a></li>
+				<li class="cl"><a href="meishigonglue.html">美食攻略</a></li>
+				<li class="cl"><a href="guoneilvyou.html">国内旅游</a></li>
+				<li class="cl"><a href="guowailvyou.html">出境旅游</a></li>
+				<li class="cl"><a href="guoneijiudian.html">国内酒店</a></li>
+				<li class="cl"><a href="jipiaoyuding.html">机票预订</a></li>
+				</ul>
+	</div>
+	<!--分隔条-->
+	<div style="width:100%;height:3px;background:#ae57a4;">
+	</div>
+	<div class="abody">
+		<div class="left">
+			<form action="post">
+				<p><b>机票预订</b></p><br/>
+				<label for="dancheng">单程</label><input id="dancheng" type="radio" name="ticket" />&nbsp;
+				<label for="wangfan">往返</label><input id="wangfan" type="radio" name="ticket" /><br/>
+				<table>
+					<tr>
+						<td>出发城市</td>
+						<td><input type="text" placeholder="郑州" id="city"/></td>
+					</tr>
+					<tr>
+						<td>到达城市</td>
+						<td><input type="text" placeholder="上海" id="city" /></td>
+					</tr>
+					<tr>
+						<td>出发时间</td>
+						<td><input type="date"/></td>
+					</tr>
+					<tr>
+						<td>返程时间</td>
+						<td><input type="date" /></td>
+					</tr>
+					<tr>
+						<td><input class="tijiao" type="submit" value="提交"/></td>
+						<td><input class="tijiao" type="reset" value="重填"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="banner">
+		</div>
+		<div class="mid">
+				<form>
+					<input type="text" class="search" placeholder="目的地查询"/>
+					<input type="button" value="搜索" class="sousuo"/>
+				</form>
+			<div class="tools">
+				<ul>
+					<li><a href="#">网上购票</a></li>
+					<li><a href="#">地图检索</a></li>
+					<li><a href="#">航班查询</a></li>
+					<li><a href="#">改签退票</a></li>
+				</ul>
+			</div>
+			<div class="gg">
+				<a href="#"><img src="images/zy-thegg.jpg" width=296px height=175px></a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="dh">
+				>>热销排行
+			</div>
+			<div class="gd">
+				<a href="#">更多>></a>
+			</div>
+			<div style="width:635px;height:1px;background-color:#ae57a4;float:left;">
+			</div>
+			<div class="zy">
+				<div><a href="#"><img src="images/zy-rx1.jpg" width=155px height=120px></a></div>
+				<div class="rx">
+					<div class="dd">郑州--北京</div>
+					<div class="rq">6月6日</div>
+					<div class="money"><span>4折</span>￥478</div>
+				</div>
+			</div>
+			<div class="zy">
+				<div><a href="#"><img src="images/zy-rx2.jpg" width=155px height=120px></a></div>
+				<div class="rx">
+					<div class="dd">郑州--重庆</div>
+					<div class="rq">6月6日</div>
+					<div class="money"><span>3折</span>￥399</div>
+				</div>
+			</div>
+			<div class="zy">
+				<div><a href="#"><img src="images/zy-rx3.jpg" width=155px height=120px></a></div>
+				<div class="rx">
+					<div class="dd">郑州--三亚</div>
+					<div class="rq">6月6日</div>
+					<div class="money"><span>4折</span>￥634</div>
+				</div>
+			</div>
+			<div class="zy">
+				<div><a href="#"><img src="images/zy-rx4.jpg" width=155px height=120px></a></div>
+				<div class="rx">
+					<div class="dd">郑州--广州</div>
+					<div class="rq">6月6日</div>
+					<div class="money"><span>6折</span>￥505</div>
+				</div>
+			</div>
+		</div>
+		<div class="jp">
+			<div class="dh">
+				>>实时机票
+			</div>
+			<div class="gd">
+				<a href="#">更多>></a>
+			</div>
+			<div style="width:950px;height:1px;background-color:#ae57a4;float:left;">
+			</div>
+			<div class="bj">
+				<div class="text">	
+					<div class="atext">郑州→北京</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月7日</div>
+					<div class="money"><span>5折</span>￥463</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→北京</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月8日</div>
+					<div class="money"><span>5折</span>￥463</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→上海</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月7日</div>
+					<div class="money"><span>6折</span>￥621</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→三亚</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月8日</div>
+					<div class="money"><span>8折</span>￥788</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→广州</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月9日</div>
+					<div class="money"><span>3折</span>￥319</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→厦门</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月9日</div>
+					<div class="money"><span>4折</span>￥356</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→武汉</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月10日</div>
+					<div class="money"><span>5折</span>￥436</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→重庆</div>
+					<div class="qg">抢购</div>
+					<div class="btext">6月10日</div>
+					<div class="money"><span>2折</span>￥390</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→杭州</div>
+					<div class="qg">热卖</div>
+					<div class="btext">6月11日</div>
+					<div class="money"><span>7折</span>￥445</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→福建</div>
+					<div class="qg">热卖</div>
+					<div class="btext">6月11日</div>
+					<div class="money"><span>3折</span>￥423</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→长春</div>
+					<div class="qg">热卖</div>
+					<div class="btext">6月11日</div>
+					<div class="money"><span>7折</span>￥676</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→沈阳</div>
+					<div class="btext">6月12日</div>
+					<div class="money"><span>4折</span>￥567</div>	
+				</div>
+				<div class="text">	
+					<div class="atext">郑州→吉林</div>
+					<div class="btext">6月14日</div>
+					<div class="money"><span>6折</span>￥450</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→天津</div>
+					<div class="btext">6月15日</div>
+					<div class="money"><span>8折</span>￥463</div>	
+				</div>
+				<div class="text">
+					<div class="atext">郑州→海口</div>
+					<div class="btext">6月17日</div>
+					<div class="money"><span>9折</span>￥754</div>	
+				</div>
+				<div class="text">	
+					<div class="atext">郑州→昆明</div>
+					<div class="btext">6月17日</div>
+					<div class="money"><span>4折</span>￥346</div>	
+				</div>
+				<div class="text">	
+					<div class="atext">郑州→徐州</div>
+					<div class="btext">6月18日</div>
+					<div class="money"><span>3折</span>￥267</div>	
+				</div>
+				<div class="text">	
+					<div class="atext">郑州→青岛</div>
+					<div class="btext">6月19日</div>
+					<div class="money"><span>2折</span>￥256</div>	
+				</div>
+			</div>
+		</div>
+		<div class="gs">
+			<div class="dh">
+				>>航空公司特惠专区
+			</div>
+			<div class="gd">
+				<a href="#">更多>></a>
+			</div>
+			<div style="width:950px;height:1px;background-color:#ae57a4;float:left;">
+			</div>
+			<div class="ground">
+				<a href="#"><img src="images/zy-gs1.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs2.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs3.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs4.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs5.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs6.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs7.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs8.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs9.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs10.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs11.jpg" width=150px height=120px></a>
+				<a href="#"><img src="images/zy-gs12.jpg" width=150px height=120px></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

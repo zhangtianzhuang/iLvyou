@@ -1,0 +1,355 @@
+<html>
+<head>
+<title>上海</title>
+<script>
+	var x = 1 ;
+	function changeBackground(){
+		var dizhi = Array("url(images/big1.jpg)","url(images/big2.jpg)",
+							"url(images/big3.png)");
+		document.getElementById("left").style.backgroundImage = dizhi[x];
+		x++;
+		if(x==3){
+			x=0;
+		}
+	}
+	setInterval(changeBackground,3000);
+</script>
+<style type="text/css">
+*{margin:0px;padding:0px;font-family:微软雅黑;}
+.head{
+	width:100%;
+	height:500px;
+	border:0px solid #FF8000;
+	background-image:url(images/shanghaihead.jpg);
+	background-repeat:round;
+	}
+.daohang{
+	width:950px;
+	height:42px;
+	border:0px solid #FF8000;
+	margin:0px auto;
+        margin-top:5px;
+	}
+.fangkuai{
+	width:189px;
+	height:40px;
+	float:left;
+	border:0px solid #FF8000;
+	text-align:center;
+	font-family:微软雅黑;
+	color:white;
+	font-size:22px;
+	background-color:#BB5E00;
+	border-radius:20px;
+	
+	}
+.fangkuai:hover{
+	width:185px;
+	height:36px;
+	border:3px solid white;
+	
+	}
+.main{
+	width:950px;
+	height:1500px;
+	border:0px solid #FF8000; 
+	margin:0px auto;
+	margin-top:5px;
+	}
+#left{
+	background-image:url(images/big1.jpg);
+	width:700px;
+	height:350px;
+	border:1px solid #FF8000;
+	float:left;
+	}
+.right{
+	width:246px;
+	height:350px;
+	border:0px solid #FF8000;
+	float:left;
+	}
+.daohang1{
+	width:950px;
+	height:37px;
+	border:0px solid #BB5E00;
+	float:left;
+	margin-top:5px;
+	text-align:center;
+	font-family:微软雅黑;
+	font-size:22px;
+	background-color:#BB5E00;
+	color:white;
+	border-radius:20px;
+	}
+.daohang2{
+	width:950px;
+	height:37px;
+	border:1px solid #FF8000;
+	float:left;
+	margin-top:5px;
+	}
+.xiahuaxian{
+	width:950px;
+	height:5px;
+	border:1px solid #FF8000;
+	}
+.zhongjian{
+	width:950px;
+	height:410px;
+	border:0px solid #FF8000;
+	margin-top:5px;
+	float:left;
+	}
+
+.zhongjianleft{
+	width:270px;
+	height:400px;
+	border:0px solid red;
+	margin:5px;
+	float:left
+	}
+.zhongjianright:hover{
+	opacity:0.5;
+	}
+.zhongjianright{
+	width:210px;
+	height:193px;
+	float:left;
+	border:0px solid red;
+	margin:5px;
+	}
+.zhongjian2{
+	width:950px;
+	height:360px;
+	border:0px solid #FF8000;
+	margin-top:5px;
+	float:left;
+	}
+.zhongjian2left{
+	width:468px;
+	height:350px;
+	margin:4px;
+	float:left;
+	border:0px solid #FF8000;
+	}
+.meishi{
+	width:215px;
+	height:310px;
+	margin:5px;
+	float:left;
+	border:0px solid #FF8000;
+	background-color:white;
+	}
+.meishi1{
+	width:215px;
+	height:200px;
+	border:1px solid #FF8000;
+	}
+.meishi2{
+	width:215px;
+	height:52px;
+	border:1px solid #FF8000;
+	font-size:13px;
+	}
+	
+	
+.biaoti{
+	width:464px;
+	height:30px;
+	border:1px solid #FF8000;
+	border-radius:20px;
+	text-align:center;
+	font-size:20px;
+	line-height:26px;
+	background-color:#BB5E00;
+	color:white;
+	}
+.zhongjian2right{
+	width:457px;
+	height:350px;
+	margin:5px;
+	float:left;
+	border:0px solid #FF8000;
+	}
+
+.left1{
+	width:350px;
+	height:210px;
+	border:1px solid #FF8000;
+	margin-top:5px;
+	margin-left:7px;
+	float:left;
+	background-image:url(images/qqq.jpg)
+
+	}
+.left1 table tr td{
+	width:100px;
+	height:40px;
+	text-align:center;
+	}
+.right1{
+	width:580px;
+	height:210px;
+	border:2px solid #FF8000;
+	margin-top:5px;
+	margin-left:5px;
+	float:left;
+	}
+
+.box{
+	width:181px;
+	height:161px;
+	float:left;
+	border:1px solid red;
+	margin-left:7px;
+	
+	}
+.box:hover{
+	opacity:0.5;
+	}
+	
+.right ul li{
+	list-style-type:none;
+	width:200px;
+	height:40px;
+	border:1px solid #FF8000;
+	margin:2px;
+	cursor:pointer;
+	text-align:center;
+	}
+.right li img {position:relative;top:5px;}
+.ziti1{
+	color:white;
+	font-size:25px;
+	}
+.ziti2{
+	color:#BB5E00;
+	font-size:20px;
+	}
+</style>
+</head>
+<body>
+	<div class="head"></div>
+	<div class="daohang">
+		<div class="fangkuai"><a href="#s1">热门景点</a></div>
+		<div class="fangkuai"><a href="#s2">游玩必备</a></div>
+		<div class="fangkuai"><a href="#s3">车票查询</a></div>
+		<div class="fangkuai"><a href="#s4">酒店查询</a></div>
+		<div class="fangkuai"><a href="index.html">返回首页</a></div></div>
+	<div class="main">
+		<div id="left"></div>
+
+		<div class="right">
+			
+			<ul>
+				<li><img src="images/hh.jpg"/>热门景点</li>
+				<li><img src="images/hh.jpg"/>热门酒店</li>
+				<li><img src="images/hh.jpg"/>游客咨询</li>
+				<li><img src="images/hh.jpg"/>上海地图</li>
+				<li><img src="images/hh.jpg"/>路况查询</li>
+				<li><img src="images/hh.jpg"/>特色美食</li>
+				<li><img src="images/hh.jpg"/>关于我们</li>
+			</ul>	
+
+			</div>
+		<div class="daohang1">
+			<a name="s1">热门景点</a></div>		
+		<div class="zhongjian">
+				<div class="zhongjianleft"><a href="#"><img src="images/dfmz1.jpg" /></a></div>
+				<div class="zhongjianright"><a href="#"><img src="images/dsn1.jpg" /></a></div>
+				<div class="zhongjianright"><a href="#"><img src="images/tzf1.jpg" /></a></div>
+				<div class="zhongjianright"><a href="#"><img src="images/hpj1.jpg" /></a></div>
+				<div class="zhongjianright"><a href="#"><img src="images/wt1.jpg" /></a></div>
+				<div class="zhongjianright"><a href="#"><img src="images/chm1.jpg" /></a></div>
+				<div class="zhongjianright"><a href="#"><img src="images/twsxz1.jpg" /></a></div>
+				</div>
+		<div class="daohang1">
+			<a name="s2">游玩必备</a></div>
+		<div class="zhongjian2">
+				<div class="zhongjian2left">
+					<div class="biaoti">必吃美食</div>
+					<div class="meishi">
+							<div class="meishi1"><a href="#"><img src="images/nxxl.jpg" /></a></div>
+							<div class="meishi2">
+									南翔小笼<br />
+									上海嘉定南翔镇的传统名吃，以皮薄、肉嫩、汁多、味鲜、形美著称.
+								</div>
+							<div class="meishi2">
+									地点：</br>
+									<a href="#">南翔馒头店(豫园路店)、南翔1900</a>
+									
+								</div>
+								</div>
+					<div class="meishi">
+							<div class="meishi1"><a href="#"><img src="images/sjhxr1.jpg" /></a></div>
+							<div class="meishi2">
+									水晶虾仁<br />
+									上桌时奇香四溢，虾仁晶莹剔透，赛如明珠，脆嫩爽滑，味极鲜美。
+								</div>
+							<div class="meishi2">
+									地点：<br />
+									<a href="#">绿波廊（豫园路店）、廊亦舫酒楼</a>
+								</div>
+								</div>
+				</div>
+				<div class="zhongjian2right">
+					<div class="biaoti">购物天堂</div>
+					<div class="meishi">
+							<div class="meishi1"><a href="#"><img src="images/njbxj1.jpg" /></a></div>
+							<div class="meishi2">
+									南京路步行街<br />
+									步行街可以逛吃逛吃的地方，街道上众多的老字号，消费水平不一。
+	
+								</div>
+							<div class="meishi2">
+										
+									游客爱买：<br />
+									<a href="#">上海雕刻 、 金属工艺品 </a>	
+								</div>		
+								</div>
+					<div class="meishi">
+							<div class="meishi1"><a href="#"><img src="images/xjh1.jpg" /></a></div>
+							<div class="meishi2">
+									徐家汇：<br />
+									徐家汇是上海最热闹的商圈，购物天堂。过去这一方向被称为上只角。
+								</div>
+							<div class="meishi2">
+									游客爱买：<br />
+									<a href="#">品牌服饰 、 真丝制品 </a>	
+								</div>	
+								</div>
+					</div>
+				</div>	
+		<div class="left1">
+			<table >
+			<caption class="ziti1">&nbsp&nbsp&nbsp&nbsp车票查询</caption><a name="s3"></a>
+					<tr>
+						<td>目的地</td>
+						<td><input type="text" name="uname" /></td>
+					</tr>
+					<tr>
+						<td>出发时间</td>
+						<td><input type="text" name="utime" /></td>
+					</tr>
+					<tr>
+						<td>关键词</td>
+						<td><input type="text" name="s1" /></td>
+					</tr>
+					<tr>
+						<td>&nbsp</td>
+						<td ><input type="image" src="images/sosuo.jpg" alt="submit" /></td>
+					</tr>
+			</table>	</div>
+		<div class="right1">
+				<span class="ziti2">热门酒店</span>	<a name="s4"></a>
+				<hr style="background-color:#BB5E00;height:2px;"></hr>
+				
+				<div class="box"><a href="#"><img src="images/glht1.jpg" /></a></div>	
+				<div class="box"><a href="#"><img src="images/rj1.jpg" /></a></div>	
+				<div class="box"><a href="#"><img src="images/xgllz1.jpg" /></a></div>	
+					</div>	
+		
+	</div>
+</body>
+</html>
